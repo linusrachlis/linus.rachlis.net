@@ -6,10 +6,41 @@
     , $navAnchors = $("nav ul li a")
     , $window = $(window)
 
+  $navAnchors
+    .mouseover(function () {
+      // Make "idle" mean that no key is being hovered
+      $navUl.removeClass("idle")
+      // Label appears
+      $(this).data("label").addClass("active")
+    })
+    .mouseout(function () {
+      // Go back to cycling keys
+      $navUl.addClass("idle")
+      // Label disappears
+      $(this).data("label").removeClass("active")
+    })
+    .each(function () {
+      var $this = $(this)
+        , $label = $("<div class='label'></div>").html($this.html())
+      $this.data("label", $label)
+      $nav.prepend($label)
+    })
+
+  // @ and * also make shift light up
+  $("nav ul li.contact a, nav ul li.experiments a")
+    .mouseover(function () {
+      $shift.addClass("on")
+    })
+    .mouseout(function () {
+      $shift.removeClass("on")
+    })
+
   $window
     .resize(function() {
+      var bgHeight = $bg.height()
       $nav.width($bg.width())
-      $nav.height($bg.height())
+      $nav.height(bgHeight)
+      $("nav .label").css("font-size", (bgHeight * 0.04) + "px")
     })
     .resize()
     .keydown(function (e) {
@@ -32,23 +63,5 @@
           $("nav ul li.resume a")[0].click()
           break;
       }
-    })
-
-  // Make "idle" mean that no key is being hovered
-  $navAnchors
-    .mouseover(function () {
-      $navUl.removeClass("idle")
-    })
-    .mouseout(function () {
-      $navUl.addClass("idle")
-    })
-
-  // @ and * also make shift light up
-  $("nav ul li.contact a, nav ul li.experiments a")
-    .mouseover(function () {
-      $shift.addClass("on")
-    })
-    .mouseout(function () {
-      $shift.removeClass("on")
     })
 })

@@ -68,7 +68,20 @@ body {
 }
 nav {
     position: absolute;
-    /*height: 100%;*/
+}
+nav .label {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    font-family: "Courier New", monospace;
+    color: white;
+    opacity: 0;
+    transition: all 1s;
+}
+nav .label.active {
+    top: 4%;
+    opacity: 1;
+    transition: all 500ms;
 }
 
 /* This business accomplishes the same thing as background-size: contain.
