@@ -6,11 +6,33 @@
     , $navAnchors = $("nav ul li a")
     , $window = $(window)
 
-  $window.resize(function() {
-    $nav.width($bg.width())
-    $nav.height($bg.height())
-  })
-  .resize()
+  $window
+    .resize(function() {
+      $nav.width($bg.width())
+      $nav.height($bg.height())
+    })
+    .resize()
+    .keydown(function (e) {
+      console.log("keypress " + e.which)
+      switch (e.which) {
+        case 50: // 2
+          if (e.shiftKey) {
+            $("nav ul li.contact a")[0].click()
+          }
+          break;
+        case 56: // 8
+          if (e.shiftKey) {
+            $("nav ul li.experiments a")[0].click()
+          }
+          break;
+        case 80: // p
+          $("nav ul li.poetry a")[0].click()
+          break;
+        case 82: // r
+          $("nav ul li.resume a")[0].click()
+          break;
+      }
+    })
 
   // Make "idle" mean that no key is being hovered
   $navAnchors
