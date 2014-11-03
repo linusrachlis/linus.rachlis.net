@@ -7,7 +7,6 @@
     , $window = $(window)
 
   $window.resize(function() {
-    console.log($bg.width() + ", " + $bg.height())
     $nav.width($bg.width())
     $nav.height($bg.height())
   })
@@ -25,7 +24,6 @@
   // @ and * also make shift light up
   $("nav ul li.contact a, nav ul li.experiments a")
     .mouseover(function () {
-      console.log("mouseover")
       $shift.addClass("on")
     })
     .mouseout(function () {
