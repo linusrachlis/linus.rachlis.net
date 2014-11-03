@@ -13,6 +13,7 @@
     })
     .resize()
     .keydown(function (e) {
+      // Respond to actually pressing the keys indicated
       switch (e.which) {
         case 50: // 2
           if (e.shiftKey) {
