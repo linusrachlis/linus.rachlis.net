@@ -13,7 +13,6 @@
     })
     .resize()
     .keydown(function (e) {
-      console.log("keypress " + e.which)
       switch (e.which) {
         case 50: // 2
           if (e.shiftKey) {
