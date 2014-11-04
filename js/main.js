@@ -37,14 +37,18 @@
 
   $window
     .resize(function() {
+      // Continuously copy bg <img> dimensions to nav element so that its children
+      // can be scaled. Also scale font size explicitly, since using a % for font-size
+      // doesn't accomplish what I want.
       var bgHeight = $bg.height()
       $nav.width($bg.width())
       $nav.height(bgHeight)
       $("nav .label").css("font-size", (bgHeight * 0.04) + "px")
     })
+    // Init scaling by running the above code on DOM ready.
     .resize()
     .keydown(function (e) {
-      // Respond to actually pressing the keys indicated
+      // Respond to actually pressing the keys indicated.
       switch (e.which) {
         case 50: // 2
           if (e.shiftKey) {
