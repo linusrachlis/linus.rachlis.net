@@ -196,7 +196,9 @@ body.contact .up {
   height: 48px;
   position: absolute;
   left: 61px;
-  top: 89px; }
+  top: 89px;
+  overflow: hidden;
+  text-indent: -9999em; }
 body.contact ul.contact-methods {
   position: absolute;
   left: 6.52174%;
@@ -216,6 +218,38 @@ body.contact ul.contact-methods {
       text-decoration: none; }
     body.contact ul.contact-methods li a:hover {
       color: #feffa3; }
+
+/* Poetry page */
+@media (min-aspect-ratio: 1725 / 2300) {
+  body.poetry {
+    /* Viewport is wider than image aspect ratio, so constrain height */ }
+    body.poetry img.bg {
+      height: 100%;
+      max-height: 2300px; } }
+@media (max-aspect-ratio: 1725 / 2300) {
+  body.poetry {
+    /* Viewport is taller than image aspect ratio, so constrain width */ }
+    body.poetry img.bg {
+      width: 100%;
+      max-width: 1725px; } }
+body.poetry .container {
+  position: absolute; }
+body.poetry ul.poems {
+  list-style: none;
+  color: white;
+  text-shadow: 0 0 1em black;
+  margin: 0;
+  padding: 0; }
+  body.poetry ul.poems > li {
+    margin: 1em 0 0 0; }
+  body.poetry ul.poems ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 140%; }
+  body.poetry ul.poems a {
+    color: white;
+    text-decoration: none; }
 
 /* Animations */
 @keyframes pulse-mouseoff {
