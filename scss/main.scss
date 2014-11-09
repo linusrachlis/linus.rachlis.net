@@ -184,6 +184,15 @@ body.contact {
   }
   
   .container { position: absolute; }
+  
+  .up {
+    display: block;
+    width: 720px;
+    height: 48px;
+    position: absolute;
+    left: 61px;
+    top: 89px;
+  }
 
   ul.contact-methods {
     position: absolute;

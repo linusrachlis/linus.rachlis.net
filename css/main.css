@@ -190,6 +190,13 @@ body.index {
       max-width: 2300px; } }
 body.contact .container {
   position: absolute; }
+body.contact .up {
+  display: block;
+  width: 720px;
+  height: 48px;
+  position: absolute;
+  left: 61px;
+  top: 89px; }
 body.contact ul.contact-methods {
   position: absolute;
   left: 6.52174%;
