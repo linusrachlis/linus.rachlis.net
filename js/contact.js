@@ -14,7 +14,7 @@
         .width($bg.width())
         .height(bgHeight)
       $contactMethodsUl
-        .css("font-size", (bgHeight * 0.04) + "px")
+        .css("font-size", (bgHeight * (36.8/920)) + "px")
     })
     // Init scaling by running the above code on DOM ready.
     .resize()
