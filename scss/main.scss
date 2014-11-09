@@ -192,6 +192,8 @@ body.contact {
     position: absolute;
     left: 61px;
     top: 89px;
+    overflow: hidden;
+    text-indent: -9999em;
   }
 
   ul.contact-methods {
