@@ -45,7 +45,7 @@
       $nav.height(bgHeight)
       $("nav .label").css("font-size", (bgHeight * 0.04) + "px")
     })
-    // Init scaling by running the above code on DOM ready.
+    // Init scaling by running the above code when the big image is loaded.
     .load(function () { $window.resize() })
     .keydown(function (e) {
       // Respond to actually pressing the keys indicated.
