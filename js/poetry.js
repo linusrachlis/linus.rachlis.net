@@ -1,6 +1,6 @@
 ;$(function () {
   var $poetryContainer = $(".container")
-    , $poemsUl = $(".container > ul")
+    , $poemsDiv = $(".poems")
     , $bg = $("img.bg")
     , $window = $(window)
 
@@ -13,8 +13,8 @@
       $poetryContainer
         .width($bg.width())
         .height(bgHeight)
-      $poemsUl
-        .css("font-size", (bgHeight * (15/955)) + "px")
+      $poemsDiv
+        .css("font-size", (bgHeight * (16/955)) + "px")
     })
     // Init scaling by running the above code when the big image is loaded.
     .load(function () { $window.resize() })
