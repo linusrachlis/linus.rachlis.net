@@ -67,7 +67,7 @@ body.index {
     position: absolute;
     top: 2%;
     left: 5%;
-    font-family: "Courier New", monospace;
+    font-family: Consolas, "Courier New", monospace;
     color: white;
     opacity: 0;
     transition: all 1s; }
