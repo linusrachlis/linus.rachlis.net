@@ -243,10 +243,10 @@ body.poetry a.back {
   font-size: 200%;
   display: block;
   position: absolute;
-  left: 2%;
-  top: 2%;
   animation: pulse-full 1.5s infinite alternate;
-  -webkit-animation: pulse-full 1.5s infinite alternate; }
+  -webkit-animation: pulse-full 1.5s infinite alternate;
+  left: 2%;
+  top: 2%; }
 body.poetry .container {
   position: absolute; }
   body.poetry .container ::-webkit-scrollbar {
@@ -258,6 +258,37 @@ body.poetry .container {
     border-radius: 12px; }
   body.poetry .container ::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 0.4); }
+body.poetry .poem {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  color: black;
+  font-family: 'Radley', serif;
+  cursor: pointer; }
+  body.poetry .poem .close-button {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    font-size: 300%;
+    animation: pulse-full 2s infinite alternate;
+    -webkit-animation: pulse-full 2s infinite alternate;
+    color: white; }
+  body.poetry .poem .margin {
+    border: 5em solid transparent;
+    height: 100%;
+    box-sizing: border-box; }
+  body.poetry .poem .text {
+    text-shadow: 0 0 1em white;
+    overflow-y: auto;
+    line-height: 1.2;
+    height: 100%; }
+    body.poetry .poem .text h2 {
+      margin: 0 0 1.4em 0;
+      font-size: 140%;
+      font-weight: normal; }
 body.poetry .poems {
   position: absolute;
   left: 10%;
