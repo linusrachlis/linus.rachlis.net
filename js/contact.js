@@ -16,6 +16,6 @@
       $contactMethodsUl
         .css("font-size", (bgHeight * (36.8/920)) + "px")
     })
-    // Init scaling by running the above code on DOM ready.
-    .resize()
+    // Init scaling by running the above code when the big image is loaded.
+    .load(function () { $window.resize() })
 })
