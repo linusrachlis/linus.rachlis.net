@@ -1,0 +1,33 @@
+@keyframes pulse-faint {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+@-webkit-keyframes pulse-faint {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes pulse-full {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes pulse-full {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
