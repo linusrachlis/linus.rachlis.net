@@ -57,6 +57,10 @@ body {
   height: 100%;
   background: #222; }
 
+ul ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 /* Home page */
 body.index {
   /* This business accomplishes the same thing as background-size: contain.
