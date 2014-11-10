@@ -3,13 +3,22 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Linus Rachlis -- Developer -- linus.rachlis.net
 
 # THANKS
 
-    <name>
+    Franklin Ta for the matrix3d transform calculator:
+      http://franklinta.com/2014/09/08/computing-css-matrix3d-transforms/
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     jQuery, Modernizr
+    Linux, Apache, MySQL, PHP
+    Git
+    Google Fonts
+    Chrome dev tools
+    Vagrant
+    Far!
+    Adobe Photoshop CS5
+    SublimeText, Brackets
