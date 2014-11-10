@@ -13,10 +13,13 @@
       // can be scaled. Also scale font size explicitly, since using a % for font-size
       // doesn't accomplish what I want.
       var bgHeight = $bg.height()
+        // A height of 613px for the bg image is the breakpoint between
+        // the font ratios.
+        , fontSizeRatio = (bgHeight > 613) ? (16/955) : (16/715)
       $poetryContainer
         .width($bg.width())
         .height(bgHeight)
-      $poetryContainer.css("font-size", (bgHeight * (16/955)) + "px")
+      $poetryContainer.css("font-size", (bgHeight * fontSizeRatio) + "px")
     })
     // Init scaling by running the above code when the big image is loaded.
     .load(function () { $window.resize() })

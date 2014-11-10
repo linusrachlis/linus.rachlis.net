@@ -68,7 +68,7 @@ body.poetry {
       color: white;
     }
     .margin {
-      border: 5em solid transparent;
+      border: 4em solid transparent;
       height: 100%;
       box-sizing: border-box;
     }
@@ -144,6 +144,15 @@ body.poetry {
           }
         }
       }
+    }
+  }
+
+  @media (max-width: 460px), (max-height: 613px) {
+    a.back { font-size: 250%; }
+    .poem {
+      .close-button { font-size: 350%; }
+      .margin { border-width: 3.5em; }
+      .text { font-size: 125%; }
     }
   }
   
