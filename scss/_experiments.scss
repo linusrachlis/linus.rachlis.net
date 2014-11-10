@@ -1,0 +1,95 @@
+body.experiments {
+  
+  @media (min-aspect-ratio: 1275/1700) {
+    /* Viewport is wider than image aspect ratio, so constrain height */
+    img.bg {
+        height: 100%;
+        max-height: 1275px;
+    }
+  }
+  
+  @media (max-aspect-ratio: 1275/1700) {
+      /* Viewport is taller than image aspect ratio, so constrain width */
+      img.bg {
+          width: 100%;
+          max-width: 1700px;
+      }
+  }
+  
+  ul.container {
+    /* Use as a container, completely covering the BG image. */
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    li {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      
+      a {
+        display: block;
+        text-indent: -9999em;
+        overflow: hidden;
+        background: top left no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        @include animation(blink-medium 2s steps(1, end) infinite);
+      }
+      a:hover {
+        @include animation(none);
+      }
+    }
+    
+    .photomind {
+      left: 726/1275 * 100%;
+      top: 150/1700 * 100%;
+      width: 100/1275 * 100%;
+      height: 68/1700 * 100%;
+      
+      a {
+        background-image: url(../img/experiment-icons/photomind.png);
+      }
+    }
+    .unicode-moth {
+      left: 400/1275 * 100%;
+      top: 780/1700 * 100%;
+      width: 56/1275 * 100%;
+      height: 36/1700 * 100%;
+      
+      a {
+        background-image: url(../img/experiment-icons/unicode-moth.png);
+      }
+    }
+    .waterfall {
+      left: 1020/1275 * 100%;
+      top: 1015/1700 * 100%;
+      width: 144/1275 * 100%;
+      height: 30/1700 * 100%;
+      
+      a {
+        background-image: url(../img/experiment-icons/waterfall.png);
+      }
+    }
+    .back {
+      left: 32/1275 * 100%;
+      bottom: 29/1700 * 100%;
+      width: 60/1275 * 100%;
+      height: 36/1700 * 100%;
+      
+      a {
+        background-image: url(../img/experiment-icons/back.png);
+        @include animation(blink-full 2s steps(1, end) infinite);
+      }
+      a:hover {
+        @include animation(none);
+        background-color: white;
+      }
+    }
+  }
+  
+}

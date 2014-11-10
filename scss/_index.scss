@@ -14,7 +14,7 @@ body.index {
   nav .label.active {
       top: 4%;
       opacity: 1;
-      transition: all 500ms;
+      transition: all .5s;
   }
 
   /* This business accomplishes the same thing as background-size: contain.
@@ -78,7 +78,7 @@ body.index {
   }
 
   nav ul.idle li a {
-      @include animation(pulse-faint alternate infinite);
+      @include animation(pulse-faint infinite alternate);
   }
   nav ul.idle li.contact a {
       @include animation-delay(1s);
@@ -100,7 +100,7 @@ body.index {
   nav ul li a:hover {
       @include animation(none);
       opacity: 1;
-      transition: opacity 500ms;
+      transition: opacity .5s;
   }
 
   nav ul li.resume {

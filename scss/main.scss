@@ -27,6 +27,9 @@ body {
 }
 ul ul { margin-top: 0; margin-bottom: 0; }
 
+/* Animations */
+@import 'animations';
+
 /* Home page */
 @import 'index';
 
@@ -36,7 +39,7 @@ ul ul { margin-top: 0; margin-bottom: 0; }
 /* Poetry page */
 @import 'poetry';
 
-/* Animations */
-@import 'animations';
+/* Experiments page */
+@import 'experiments';
 
 @import "h5b-after";

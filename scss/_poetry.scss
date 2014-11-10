@@ -64,7 +64,7 @@ body.poetry {
       top: 0;
       right: 3%;
       font-size: 300%;
-      @include animation(pulse-full 2s infinite alternate);
+      @include animation(pulse-strong 2s infinite alternate);
       color: white;
     }
     .margin {
@@ -91,7 +91,7 @@ body.poetry {
     font-size: 200%;
     display: block;
     position: absolute;
-    @include animation(pulse-full 1.5s infinite alternate);
+    @include animation(pulse-strong 1.5s infinite alternate);
     left: 2%;
     top: 2%;
     opacity: 1;

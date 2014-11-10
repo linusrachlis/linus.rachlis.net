@@ -61,6 +61,57 @@ ul ul {
   margin-top: 0;
   margin-bottom: 0; }
 
+/* Animations */
+@keyframes pulse-faint {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.4; } }
+@-webkit-keyframes pulse-faint {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.4; } }
+@keyframes pulse-medium {
+  0% {
+    opacity: .4; }
+  100% {
+    opacity: .7; } }
+@-webkit-keyframes pulse-medium {
+  0% {
+    opacity: .4; }
+  100% {
+    opacity: .7; } }
+@keyframes pulse-strong {
+  0% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes pulse-strong {
+  0% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+@keyframes blink-medium {
+  0%, 100% {
+    opacity: .4; }
+  50% {
+    opacity: .7; } }
+@-webkit-keyframes blink-medium {
+  0%, 100% {
+    opacity: .4; }
+  50% {
+    opacity: .7; } }
+@keyframes blink-full {
+  0%, 100% {
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
+@-webkit-keyframes blink-full {
+  0%, 100% {
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
 /* Home page */
 body.index {
   /* This business accomplishes the same thing as background-size: contain.
@@ -82,7 +133,7 @@ body.index {
   body.index nav .label.active {
     top: 4%;
     opacity: 1;
-    transition: all 500ms; }
+    transition: all .5s; }
   @media (min-aspect-ratio: 2033 / 1475) {
     body.index {
       /* Viewport is wider than image aspect ratio, so constrain height */ }
@@ -127,8 +178,8 @@ body.index {
     opacity: 0;
     transition: opacity 1s; }
   body.index nav ul.idle li a {
-    animation: pulse-faint alternate infinite;
-    -webkit-animation: pulse-faint alternate infinite; }
+    animation: pulse-faint infinite alternate;
+    -webkit-animation: pulse-faint infinite alternate; }
   body.index nav ul.idle li.contact a {
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
@@ -153,7 +204,7 @@ body.index {
     animation: none;
     -webkit-animation: none;
     opacity: 1;
-    transition: opacity 500ms; }
+    transition: opacity .5s; }
   body.index nav ul li.resume {
     left: 24.495%;
     top: 54.101%;
@@ -274,8 +325,8 @@ body.poetry .poem {
     top: 0;
     right: 3%;
     font-size: 300%;
-    animation: pulse-full 2s infinite alternate;
-    -webkit-animation: pulse-full 2s infinite alternate;
+    animation: pulse-strong 2s infinite alternate;
+    -webkit-animation: pulse-strong 2s infinite alternate;
     color: white; }
   body.poetry .poem .margin {
     border: 5em solid transparent;
@@ -295,8 +346,8 @@ body.poetry a.back {
   font-size: 200%;
   display: block;
   position: absolute;
-  animation: pulse-full 1.5s infinite alternate;
-  -webkit-animation: pulse-full 1.5s infinite alternate;
+  animation: pulse-strong 1.5s infinite alternate;
+  -webkit-animation: pulse-strong 1.5s infinite alternate;
   left: 2%;
   top: 2%;
   opacity: 1; }
@@ -338,27 +389,79 @@ body.poetry .poems {
           opacity: .6;
           transition: opacity .2s; }
 
-/* Animations */
-@keyframes pulse-faint {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 0.4; } }
-@-webkit-keyframes pulse-faint {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 0.4; } }
-@keyframes pulse-full {
-  0% {
-    opacity: 0.6; }
-  100% {
-    opacity: 1; } }
-@-webkit-keyframes pulse-full {
-  0% {
-    opacity: 0.6; }
-  100% {
-    opacity: 1; } }
+/* Experiments page */
+@media (min-aspect-ratio: 1275 / 1700) {
+  body.experiments {
+    /* Viewport is wider than image aspect ratio, so constrain height */ }
+    body.experiments img.bg {
+      height: 100%;
+      max-height: 1275px; } }
+@media (max-aspect-ratio: 1275 / 1700) {
+  body.experiments {
+    /* Viewport is taller than image aspect ratio, so constrain width */ }
+    body.experiments img.bg {
+      width: 100%;
+      max-width: 1700px; } }
+body.experiments ul.container {
+  /* Use as a container, completely covering the BG image. */
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  body.experiments ul.container li {
+    position: absolute;
+    margin: 0;
+    padding: 0; }
+    body.experiments ul.container li a {
+      display: block;
+      text-indent: -9999em;
+      overflow: hidden;
+      background: top left no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 100%;
+      animation: blink-medium 2s steps(1, end) infinite;
+      -webkit-animation: blink-medium 2s steps(1, end) infinite; }
+    body.experiments ul.container li a:hover {
+      animation: none;
+      -webkit-animation: none; }
+  body.experiments ul.container .photomind {
+    left: 56.94118%;
+    top: 8.82353%;
+    width: 7.84314%;
+    height: 4%; }
+    body.experiments ul.container .photomind a {
+      background-image: url(../img/experiment-icons/photomind.png); }
+  body.experiments ul.container .unicode-moth {
+    left: 31.37255%;
+    top: 45.88235%;
+    width: 4.39216%;
+    height: 2.11765%; }
+    body.experiments ul.container .unicode-moth a {
+      background-image: url(../img/experiment-icons/unicode-moth.png); }
+  body.experiments ul.container .waterfall {
+    left: 80%;
+    top: 59.70588%;
+    width: 11.29412%;
+    height: 1.76471%; }
+    body.experiments ul.container .waterfall a {
+      background-image: url(../img/experiment-icons/waterfall.png); }
+  body.experiments ul.container .back {
+    left: 2.5098%;
+    bottom: 1.70588%;
+    width: 4.70588%;
+    height: 2.11765%; }
+    body.experiments ul.container .back a {
+      background-image: url(../img/experiment-icons/back.png);
+      animation: blink-full 2s steps(1, end) infinite;
+      -webkit-animation: blink-full 2s steps(1, end) infinite; }
+    body.experiments ul.container .back a:hover {
+      animation: none;
+      -webkit-animation: none;
+      background-color: white; }
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
