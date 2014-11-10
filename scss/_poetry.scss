@@ -22,15 +22,6 @@ body.poetry {
     text-decoration: none;
   }
   
-  a.back {
-    font-size: 200%;
-    display: block;
-    position: absolute;
-    @include animation(pulse-full 1.5s infinite alternate);
-    left: 2%;
-    top: 2%;
-  }
-  
   .container {
     position: absolute;
     
@@ -94,6 +85,19 @@ body.poetry {
         font-weight: normal;
       }
     }
+  }
+  
+  a.back {
+    font-size: 200%;
+    display: block;
+    position: absolute;
+    @include animation(pulse-full 1.5s infinite alternate);
+    left: 2%;
+    top: 2%;
+    opacity: 1;
+  }
+  .container.reading-mode a.back {
+    @include animation(none);
   }
   
   .poems {

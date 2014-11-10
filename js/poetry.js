@@ -26,16 +26,21 @@
     e.preventDefault()
     var $this = $(this)
     $poemText.load($this.attr('href') + " .poem-text")
-    $poemsDiv.add($backButton).fadeOut('fast', function () {
+    $poetryContainer.addClass('reading-mode')
+    // In IE10, setting poemsDiv to display:none (what happens upon completion of $.fadeOut())
+    // resets its scroll position, but setting opacity to 0 doesn't.
+    $poemsDiv.add($backButton).animate({opacity: 0}, 'fast', function () {
       $poemDiv.fadeIn('slow')
     })
   })
   
   // Close poem
   $poemDiv.click(function () {
+    $poetryContainer.removeClass('reading-mode')
     $poemDiv.fadeOut('fast', function () {
       $poemText.text("...")
-      $poemsDiv.add($backButton).fadeIn('fast')
+      // See above comment re: IE.
+      $poemsDiv.add($backButton).animate({opacity: 1}, 'fast')
     })
   })
 })

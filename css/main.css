@@ -243,14 +243,6 @@ body.contact ul.contact-methods {
 body.poetry a {
   color: white;
   text-decoration: none; }
-body.poetry a.back {
-  font-size: 200%;
-  display: block;
-  position: absolute;
-  animation: pulse-full 1.5s infinite alternate;
-  -webkit-animation: pulse-full 1.5s infinite alternate;
-  left: 2%;
-  top: 2%; }
 body.poetry .container {
   position: absolute; }
   body.poetry .container ::-webkit-scrollbar {
@@ -299,6 +291,18 @@ body.poetry .poem {
       margin: 0 0 1.4em 0;
       font-size: 140%;
       font-weight: normal; }
+body.poetry a.back {
+  font-size: 200%;
+  display: block;
+  position: absolute;
+  animation: pulse-full 1.5s infinite alternate;
+  -webkit-animation: pulse-full 1.5s infinite alternate;
+  left: 2%;
+  top: 2%;
+  opacity: 1; }
+body.poetry .container.reading-mode a.back {
+  animation: none;
+  -webkit-animation: none; }
 body.poetry .poems {
   position: absolute;
   left: 10%;
