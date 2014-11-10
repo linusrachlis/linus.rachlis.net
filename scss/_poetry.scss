@@ -35,14 +35,14 @@ body.poetry {
     position: absolute;
     
     ::-webkit-scrollbar {
-        width: 3%;
+        width: .5em;
     }
     ::-webkit-scrollbar-track {
         background-color: transparent;
     }
     ::-webkit-scrollbar-thumb {
       background-color: rgba(255,255,255,0.2);
-      border-radius: 12px; // TODO figure out how to use relative
+      border-radius: .25em;
     }
     ::-webkit-scrollbar-thumb:hover {
       background-color: rgba(255,255,255,0.4);
@@ -86,6 +86,7 @@ body.poetry {
       overflow-y: auto;
       line-height: 1.2;
       height: 100%;
+      font-size: 110%;
       
       h2 {
         margin: 0 0 1.4em 0;
@@ -105,7 +106,7 @@ body.poetry {
     overflow-y: auto;
     font-family: 'Radley', serif;
     color: white;
-    text-shadow: 0 0 1em black;
+    text-shadow: 0 0 0.8em black;
     transform: matrix3d(1.0455525626369, 0.0653322338474679, 0, 0.000135802973950249, -0.00779532730817718, 1.2165199183822, 0, 0.000826077336026331, 0, 0, 1, 0, -1, -15, 0, 1);
     transform-origin: 0px 0px 0px;
 
