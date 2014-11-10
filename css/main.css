@@ -302,6 +302,16 @@ body.contact ul.contact-methods {
       text-decoration: none; }
     body.contact ul.contact-methods li a:hover {
       color: #feffa3; }
+body.contact ul.contact-methods.small {
+  display: none;
+  font-size: 170%; }
+body.contact ul.contact-methods.big {
+  display: block; }
+@media (max-width: 460px), (max-height: 345px) {
+  body.contact ul.contact-methods.small {
+    display: block; }
+  body.contact ul.contact-methods.big {
+    display: none; } }
 
 /* Poetry page */
 @media (min-aspect-ratio: 1725 / 2300) {

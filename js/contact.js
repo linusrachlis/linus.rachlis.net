@@ -1,6 +1,5 @@
 ;$(function () {
   var $contactContainer = $(".container")
-    , $contactMethodsUl = $(".container ul")
     , $bg = $("img.bg")
     , $window = $(window)
 
@@ -13,7 +12,6 @@
       $contactContainer
         .width($bg.width())
         .height(bgHeight)
-      $contactMethodsUl
         .css("font-size", (bgHeight * (36.8/920)) + "px")
     })
     // Init scaling by running the above code when the big image is loaded.

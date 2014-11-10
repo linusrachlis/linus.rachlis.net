@@ -56,5 +56,16 @@ body.contact {
       }
     }
   }
+
+  ul.contact-methods.small {
+    display: none;
+    font-size: 170%;
+  }
+  ul.contact-methods.big { display: block; }
+
+  @media (max-width: 460px), (max-height: 345px) {
+    ul.contact-methods.small { display: block; }
+    ul.contact-methods.big { display: none; }
+  }
   
 }
