@@ -1,0 +1,6 @@
+[submodule "experiments/unicode-moth"]
+	path = experiments/unicode-moth
+	url = https://github.com/linusrachlis/unicode-moth.git
+[submodule "experiments/photomind"]
+	path = experiments/photomind
+	url = https://github.com/linusrachlis/photomind.git
