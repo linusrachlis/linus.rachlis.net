@@ -93,3 +93,18 @@ body.experiments {
   }
   
 }
+
+html.touch body.experiments {
+  ul.container .back {
+    transform: scale(2) translateX(50%) translateY(-60%);
+  }
+  ul.container .photomind {
+    transform: scale(2);
+  }
+  ul.container .unicode-moth {
+    transform: scale(2) translateY(-20%);
+  }
+  ul.container .waterfall {
+    transform: scale(2) translateY(-50%);
+  }
+}

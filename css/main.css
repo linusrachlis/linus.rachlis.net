@@ -487,6 +487,15 @@ body.experiments ul.container {
       -webkit-animation: none;
       background-color: white; }
 
+html.touch body.experiments ul.container .back {
+  transform: scale(2) translateX(50%) translateY(-60%); }
+html.touch body.experiments ul.container .photomind {
+  transform: scale(2); }
+html.touch body.experiments ul.container .unicode-moth {
+  transform: scale(2) translateY(-20%); }
+html.touch body.experiments ul.container .waterfall {
+  transform: scale(2) translateY(-50%); }
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
