@@ -31,6 +31,8 @@
     // resets its scroll position, but setting opacity to 0 doesn't.
     $poemsDiv.add($backButton).animate({opacity: 0}, 'fast', function () {
       $poemDiv.fadeIn('slow')
+      // Reset poem scroll position (it persists in FF despite the content reset).
+      $poemText.scrollTop(0)
     })
   })
   
@@ -38,6 +40,7 @@
   $poemDiv.click(function () {
     $poetryContainer.removeClass('reading-mode')
     $poemDiv.fadeOut('fast', function () {
+      // When it finishes fading out, reset content to loading indicator.
       $poemText.text("...")
       // See above comment re: IE.
       $poemsDiv.add($backButton).animate({opacity: 1}, 'fast')
