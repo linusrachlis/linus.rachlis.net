@@ -3,27 +3,34 @@ body.index {
       position: absolute;
   }
   nav .label {
-      position: absolute;
+    display: block;
+    position: absolute;
+    font-family: Consolas, "Courier New", monospace;
+    color: white;
+    text-decoration: none;
+  }
+  nav > .label {
+      /* Non-touch only because of child selector */
       top: 2%;
       left: 5%;
-      font-family: Consolas, "Courier New", monospace;
-      color: white;
       opacity: 0;
       transition: all 1s;
   }
-  nav .label.active {
+  nav > .label.active {
+      /* Non-touch only because of child selector */
       top: 4%;
       opacity: 1;
       transition: all .5s;
   }
 
+  @media (min-aspect-ratio: 2033/1475) {
   /* This business accomplishes the same thing as background-size: contain.
      But there is a reason to go through it. If I went the background route,
      I wouldn't be able to read back out the image's changing dimensions.
      Using an img lets me use the browser's natural habit of maintaining an
      img element's aspect ratio to also update the nav container's dimensions.
      (See main.js.) */
-  @media (min-aspect-ratio: 2033/1475) {
+     
       /* Viewport is wider than image aspect ratio, so constrain height */
       img.bg {
           height: 100%;
@@ -64,8 +71,11 @@ body.index {
       position: absolute;
       margin: 0;
       padding: 0;
+      opacity: 0;
+      transition: opacity 1s;
+      overflow: visible;
   }
-  nav ul li a {
+  nav ul li .key {
       display: block;
       width: 100%;
       height: 100%;
@@ -73,32 +83,30 @@ body.index {
       text-indent: -9999em;
       background: top left no-repeat;
       background-size: contain;
-      opacity: 0;
-      transition: opacity 1s;
   }
 
-  nav ul.idle li a {
+  nav ul.idle li {
       @include animation(pulse-faint infinite alternate);
   }
-  nav ul.idle li.contact a {
+  nav ul.idle li.contact {
       @include animation-delay(1s);
       @include animation-duration(0.8s);
   }
-  nav ul.idle li.resume a {
+  nav ul.idle li.resume {
       @include animation-delay(2s);
       @include animation-duration(1s);
   }
-  nav ul.idle li.poetry a {
+  nav ul.idle li.poetry {
       @include animation-delay(3s);
       @include animation-duration(1.2s);
   }
-  nav ul.idle li.experiments a {
+  nav ul.idle li.experiments {
       @include animation-delay(4s);
       @include animation-duration(1.4s);
   }
 
-  nav ul li {
-    a:hover, a:focus {
+  nav ul {
+    li:hover, li.focus {
       @include animation(none);
       opacity: 1;
       transition: opacity .5s;
@@ -111,7 +119,7 @@ body.index {
       width: 16.182%;
       height: 18.033%;
   }
-  nav ul li.resume a {
+  nav ul li.resume .key {
       background-image: url(../img/light-r.jpg);
   }
   nav ul li.poetry {
@@ -120,7 +128,7 @@ body.index {
       width: 14.36301%;
       height: 14.101695%;
   }
-  nav ul li.poetry a {
+  nav ul li.poetry .key {
       background-image: url(../img/light-p.jpg);
   }
   nav ul li.contact {
@@ -129,7 +137,7 @@ body.index {
       width: 15.00246%;
       height: 17.7627%;
   }
-  nav ul li.contact a {
+  nav ul li.contact .key {
       background-image: url(../img/light-2.jpg);
   }
   nav ul li.experiments {
@@ -138,7 +146,35 @@ body.index {
       width: 13.1825%;
       height: 13.6949%;
   }
-  nav ul li.experiments a {
+  nav ul li.experiments .key {
       background-image: url(../img/light-8.jpg);
+  }
+}
+
+html.touch body.index {
+  /* For touch devices, put labels next to keys and pulse with key */
+  nav ul {
+    li .label {
+      white-space: nowrap;
+      opacity: .75;
+    }
+    li.contact .label {
+      left: 2em;
+      top: 2.5em;
+    }
+    li.resume .label {
+      left: 3em;
+      top: 2.5em;
+    }
+    li.poetry .label {
+      left: 4.5em;
+      top: .5em;
+      font-size: 80%;
+    }
+    li.experiments .label {
+      left: -7em;
+      top: -.25em;
+      font-size: 80%;
+    }
   }
 }
