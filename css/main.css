@@ -414,14 +414,16 @@ body.poetry .poems {
           opacity: .6;
           transition: opacity .2s; }
 @media (max-width: 460px), (max-height: 613px) {
-  body.poetry a.back {
-    font-size: 250%; }
-  body.poetry .poem .close-button {
-    font-size: 350%; }
-  body.poetry .poem .margin {
-    border-width: 3.5em; }
-  body.poetry .poem .text {
-    font-size: 125%; } }
+  body.poetry {
+    /* Increase sizes for small screens (works in conjunction w JS) */ }
+    body.poetry a.back {
+      font-size: 250%; }
+    body.poetry .poem .close-button {
+      font-size: 350%; }
+    body.poetry .poem .margin {
+      border-width: 3.5em; }
+    body.poetry .poem .text {
+      font-size: 125%; } }
 
 /* Experiments page */
 @media (min-aspect-ratio: 1275 / 1700) {
@@ -495,15 +497,17 @@ body.experiments ul.container {
       animation: none;
       -webkit-animation: none;
       background-color: white; }
-
-html.touch body.experiments ul.container .back {
-  transform: scale(2) translateX(50%) translateY(-60%); }
-html.touch body.experiments ul.container .photomind {
-  transform: scale(2); }
-html.touch body.experiments ul.container .unicode-moth {
-  transform: scale(2) translateY(-20%); }
-html.touch body.experiments ul.container .waterfall {
-  transform: scale(2) translateY(-50%); }
+@media (max-width: 460px), (max-height: 613px) {
+  body.experiments {
+    /* Make icons bigger for small screens */ }
+    body.experiments ul.container .back {
+      transform: scale(2) translateX(50%) translateY(-60%); }
+    body.experiments ul.container .photomind {
+      transform: scale(2); }
+    body.experiments ul.container .unicode-moth {
+      transform: scale(2) translateY(-20%); }
+    body.experiments ul.container .waterfall {
+      transform: scale(2) translateY(-50%); } }
 
 /* ==========================================================================
    Media Queries

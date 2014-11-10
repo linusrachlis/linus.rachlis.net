@@ -91,20 +91,21 @@ body.experiments {
       }
     }
   }
-  
-}
 
-html.touch body.experiments {
-  ul.container .back {
-    transform: scale(2) translateX(50%) translateY(-60%);
+  @media (max-width: 460px), (max-height: 613px) {
+    /* Make icons bigger for small screens */
+    ul.container .back {
+      transform: scale(2) translateX(50%) translateY(-60%);
+    }
+    ul.container .photomind {
+      transform: scale(2);
+    }
+    ul.container .unicode-moth {
+      transform: scale(2) translateY(-20%);
+    }
+    ul.container .waterfall {
+      transform: scale(2) translateY(-50%);
+    }
   }
-  ul.container .photomind {
-    transform: scale(2);
-  }
-  ul.container .unicode-moth {
-    transform: scale(2) translateY(-20%);
-  }
-  ul.container .waterfall {
-    transform: scale(2) translateY(-50%);
-  }
+  
 }
