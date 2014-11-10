@@ -16,8 +16,7 @@
       $poetryContainer
         .width($bg.width())
         .height(bgHeight)
-      $poemsDiv.css("font-size", (bgHeight * (16/955)) + "px")
-      $poemText.css("font-size", (bgHeight * (17/955)) + "px")
+      $poetryContainer.css("font-size", (bgHeight * (16/955)) + "px")
     })
     // Init scaling by running the above code when the big image is loaded.
     .load(function () { $window.resize() })
