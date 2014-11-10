@@ -97,10 +97,12 @@ body.index {
       @include animation-duration(1.4s);
   }
 
-  nav ul li a:hover {
+  nav ul li {
+    a:hover, a:focus {
       @include animation(none);
       opacity: 1;
       transition: opacity .5s;
+    }
   }
 
   nav ul li.resume {

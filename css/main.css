@@ -200,7 +200,7 @@ body.index {
     -webkit-animation-delay: 4s;
     animation-duration: 1.4s;
     -webkit-animation-duration: 1.4s; }
-  body.index nav ul li a:hover {
+  body.index nav ul li a:hover, body.index nav ul li a:focus {
     animation: none;
     -webkit-animation: none;
     opacity: 1;

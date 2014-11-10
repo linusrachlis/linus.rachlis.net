@@ -7,13 +7,13 @@
     , $window = $(window)
 
   $navAnchors
-    .mouseover(function () {
+    .on('mouseover focus', function () {
       // Make "idle" mean that no key is being hovered
       $navUl.removeClass("idle")
       // Label appears
       $(this).data("label").addClass("active")
     })
-    .mouseout(function () {
+    .on('mouseout blur', function () {
       // Go back to cycling keys
       $navUl.addClass("idle")
       // Label disappears
@@ -28,10 +28,10 @@
 
   // @ and * also make shift light up
   $("nav ul li.contact a, nav ul li.experiments a")
-    .mouseover(function () {
+    .on('mouseover focus', function () {
       $shift.addClass("on")
     })
-    .mouseout(function () {
+    .on('mouseout blur', function () {
       $shift.removeClass("on")
     })
 
