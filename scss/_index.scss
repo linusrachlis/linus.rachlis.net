@@ -22,6 +22,23 @@ body.index {
       opacity: 1;
       transition: all .5s;
   }
+  
+  nav .hint {
+    display: block;
+    position: absolute;
+    font-family: Consolas, "Courier New", monospace;
+    color: white;
+    top: 4%;
+    left: 5%;
+    /* Disabled state (nav not idle) */
+    @include animation(none);
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  nav.idle .hint {
+    /* When nav is idle, flash hint if the user doesn't hover for a while */
+    @include animation(blink-full 2s infinite 7s);
+  }
 
   @media (min-aspect-ratio: 2033/1475) {
   /* This business accomplishes the same thing as background-size: contain.
@@ -85,24 +102,24 @@ body.index {
       background-size: contain;
   }
 
-  nav ul.idle li {
+  nav.idle ul li {
       @include animation(pulse-faint infinite alternate);
   }
-  nav ul.idle li.contact {
+  nav.idle ul li.contact {
       @include animation-delay(1s);
-      @include animation-duration(0.8s);
+      @include animation-duration(.6s);
   }
-  nav ul.idle li.resume {
+  nav.idle ul li.resume {
+      @include animation-delay(1.5s);
+      @include animation-duration(.8s);
+  }
+  nav.idle ul li.poetry {
       @include animation-delay(2s);
       @include animation-duration(1s);
   }
-  nav ul.idle li.poetry {
-      @include animation-delay(3s);
+  nav.idle ul li.experiments {
+      @include animation-delay(2.5s);
       @include animation-duration(1.2s);
-  }
-  nav ul.idle li.experiments {
-      @include animation-delay(4s);
-      @include animation-duration(1.4s);
   }
 
   nav ul {

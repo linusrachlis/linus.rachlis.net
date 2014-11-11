@@ -1,5 +1,6 @@
 ;$(function () {
   var $nav = $("nav")
+    , $navHint = $("nav .hint")
     , $navUl = $("nav ul")
     , $bg = $("img.bg")
     , $shift = $("img.shift")
@@ -10,7 +11,7 @@
     .on('mouseover', function () {
       var $this = $(this)
       // Make "idle" mean that no key is being hovered
-      $navUl.removeClass("idle")
+      $nav.removeClass("idle")
       if (!Modernizr.touch) {
         // Label appears
         $this.data("label").addClass("active")
@@ -19,7 +20,7 @@
     .on('mouseout', function () {
       var $this = $(this)
       // Go back to cycling keys
-      $navUl.addClass("idle")
+      $nav.addClass("idle")
       if (!Modernizr.touch) {
         // Label disappears
         $this.data("label").removeClass("active")

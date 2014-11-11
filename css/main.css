@@ -132,6 +132,22 @@ body.index nav > .label.active {
   top: 4%;
   opacity: 1;
   transition: all .5s; }
+body.index nav .hint {
+  display: block;
+  position: absolute;
+  font-family: Consolas, "Courier New", monospace;
+  color: white;
+  top: 4%;
+  left: 5%;
+  /* Disabled state (nav not idle) */
+  animation: none;
+  -webkit-animation: none;
+  opacity: 0;
+  transition: opacity .5s; }
+body.index nav.idle .hint {
+  /* When nav is idle, flash hint if the user doesn't hover for a while */
+  animation: blink-full 2s infinite 7s;
+  -webkit-animation: blink-full 2s infinite 7s; }
 @media (min-aspect-ratio: 2033 / 1475) {
   body.index {
     /* This business accomplishes the same thing as background-size: contain.
@@ -182,29 +198,29 @@ body.index nav ul li .key {
   text-indent: -9999em;
   background: top left no-repeat;
   background-size: contain; }
-body.index nav ul.idle li {
+body.index nav.idle ul li {
   animation: pulse-faint infinite alternate;
   -webkit-animation: pulse-faint infinite alternate; }
-body.index nav ul.idle li.contact {
+body.index nav.idle ul li.contact {
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
+  animation-duration: 0.6s;
+  -webkit-animation-duration: 0.6s; }
+body.index nav.idle ul li.resume {
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
   animation-duration: 0.8s;
   -webkit-animation-duration: 0.8s; }
-body.index nav ul.idle li.resume {
+body.index nav.idle ul li.poetry {
   animation-delay: 2s;
   -webkit-animation-delay: 2s;
   animation-duration: 1s;
   -webkit-animation-duration: 1s; }
-body.index nav ul.idle li.poetry {
-  animation-delay: 3s;
-  -webkit-animation-delay: 3s;
+body.index nav.idle ul li.experiments {
+  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
   animation-duration: 1.2s;
   -webkit-animation-duration: 1.2s; }
-body.index nav ul.idle li.experiments {
-  animation-delay: 4s;
-  -webkit-animation-delay: 4s;
-  animation-duration: 1.4s;
-  -webkit-animation-duration: 1.4s; }
 body.index nav ul li:hover, body.index nav ul li.focus {
   animation: none;
   -webkit-animation: none;
@@ -282,7 +298,9 @@ body.contact .up {
   left: 5.27226%;
   top: 10.25346%;
   overflow: hidden;
-  text-indent: -9999em; }
+  text-indent: -9999em;
+  /* A barely-perceptible bg color is necessary for IE to make it clickable */
+  background-color: rgba(0, 0, 0, 0.001); }
 body.contact ul.contact-methods {
   position: absolute;
   left: 6.52174%;
@@ -301,7 +319,7 @@ body.contact ul.contact-methods {
       color: white;
       text-decoration: none; }
     body.contact ul.contact-methods li a:hover {
-      color: #feffa3; }
+      color: #feff7b; }
 body.contact ul.contact-methods.small {
   display: none;
   font-size: 170%; }
