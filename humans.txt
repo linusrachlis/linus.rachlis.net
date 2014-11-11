@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Linus Rachlis -- Developer -- linus.rachlis.net
+    Linus Rachlis -- Designer/Developer -- linus.rachlis.net -- Duh, you're here already
 
 # THANKS
 
@@ -14,8 +14,8 @@
 
     HTML5, CSS3
     jQuery, Modernizr
+    Git, GitHub
     Linux, Apache, MySQL, PHP
-    Git
     Google Fonts
     Chrome dev tools
     Vagrant
