@@ -28,6 +28,8 @@ body.contact {
     top: 89/868 * 100%;
     overflow: hidden;
     text-indent: -9999em;
+    /* A barely-perceptible bg color is necessary for IE to make it clickable */
+    background-color: rgba(0,0,0,0.001);
   }
 
   ul.contact-methods {
@@ -52,7 +54,7 @@ body.contact {
         
       }
       a:hover {
-        color: #feffa3;
+        color: #feff7b;
       }
     }
   }
