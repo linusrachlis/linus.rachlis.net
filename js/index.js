@@ -12,19 +12,15 @@
       var $this = $(this)
       // Make "idle" mean that no key is being hovered
       $nav.removeClass("idle")
-      if (!Modernizr.touch) {
-        // Label appears
-        $this.data("label").addClass("active")
-      }
+      // Tell label it's inactive
+      $this.data("label").addClass("active")
     })
     .on('mouseout', function () {
       var $this = $(this)
       // Go back to cycling keys
       $nav.addClass("idle")
-      if (!Modernizr.touch) {
-        // Label disappears
-        $this.data("label").removeClass("active")
-      }
+      // Tell label it's no longer active
+      $this.data("label").removeClass("active")
     })
     .each(function () {
       var $this = $(this)
@@ -32,15 +28,19 @@
         , labelBaseHtml = (Modernizr.touch)
             ? ("<a href='" + $keyAnchor.attr('href') + "' class='label'></a>")
             : "<span class='label'></span>"
-        , $label = $(labelBaseHtml).html($keyAnchor.html())
+        , $label = $(labelBaseHtml)
+                     .html($keyAnchor.html())
+                     .addClass($this.attr('class'))
       if (Modernizr.touch) {
-        // Put label anchor in this LI, alongside keyAnchor, so it can
-        // be positioned relative to this LI.
-        $this.prepend($label)
-      } else {
-        $nav.prepend($label)
-        $this.data("label", $label)
+        // Copy mouse events to LI with the key image
+        $label.mouseover(function () {
+          $this.addClass('hover').mouseover()
+        }).mouseout(function () {
+          $this.removeClass('hover').mouseout()
+        })
       }
+      $nav.append($label)
+      $this.data("label", $label)
     })
 
   // @ and * also make shift light up
@@ -56,10 +56,10 @@
   // on LIs.
   $("nav ul li .key")
     .on('focus', function () {
-      $(this).parent().addClass('focus').mouseover()
+      $(this).parent().addClass('hover').mouseover()
     })
     .on('blur', function () {
-      $(this).parent().removeClass('focus').mouseout()
+      $(this).parent().removeClass('hover').mouseout()
     })
 
   $window
