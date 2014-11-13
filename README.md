@@ -1,4 +1,4 @@
 linus.rachlis.net
 =================
 
-A new version of my personal site to be more awesome, obscure, mysterious, and pretentious -- all while teaching me CSS3.
+A new version of my personal site to be more entertaining, obscure, mysterious, and pretentious, as well as better demonstrate my front-end skills.
