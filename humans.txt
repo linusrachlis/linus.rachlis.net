@@ -15,7 +15,7 @@
     HTML5, CSS3
     jQuery, Modernizr
     Git, GitHub
-    Linux, Apache, MySQL, PHP
+    Ubuntu, Apache, MySQL, PHP
     Google Fonts
     Chrome dev tools
     Vagrant
