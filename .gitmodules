@@ -4,3 +4,6 @@
 [submodule "experiments/photomind"]
 	path = experiments/photomind
 	url = https://github.com/linusrachlis/photomind.git
+[submodule "experiments/waterfall"]
+	path = experiments/waterfall
+	url = git@github.com:linusrachlis/waterfall.git
