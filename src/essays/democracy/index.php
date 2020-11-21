@@ -26,7 +26,7 @@ reality, democracy itself looked a little worse.
 The 2008 financial crisis finally ended the strained ideological
 marriage of free markets and democracy, but the idea of democracy came
 away damaged. We now speak of public institutions in the language of
-business; we feel instinctively dirty about public spending; we\'re
+business; we feel instinctively dirty about public spending; we're
 allergic to taxation. When we mention democracy now, we normally invoke
 only fragments of its full meaning: fairness, anti-authoritarianism,
 majority rule, inefficiency. Meanwhile, the clear-eyed oligarchs of the
@@ -115,21 +115,10 @@ democratic? How sustainable is democracy?
 The worst form of government, except for all the others {#the-worst-form-of-government-except-for-all-the-others}
 -------------------------------------------------------
 
-*Plurality of ideas leads to deadlock if people don't go out of their
-way to understand each other -- or if leaders exploit the differences,
-entrenching them for short-term gain. People end up thinking of politics
-as balancing fairness and efficiency, but these terms are relative: one
-side's fairness is the other's efficiency, and vice-versa. They're
-relative to your values and objectives.*
-
-*Democracy's meaning is simple but has complex consequences: sharing
-power as widely as possible. We should wipe away the layers of meaning
-we've put on top, as they are self-contradictory... right?*
-
 It's clear from the above examples that people in my daily life hold a
 mixed view of democracy -- at best. Our "can't live with it; can't live
 without it" attitude toward democracy is most famously expressed by the
-title of this section, a view popularized ([but
+above words, a view popularized ([but
 probably not
 originated](https://richardlangworth.com/worst-form-of-government))
 by Winston Churchill.
@@ -138,7 +127,7 @@ Now that we've surveyed what we say about democracy, let's look at what
 democracy says about itself. Do you remember this, perhaps from high
 school civics or philosophy?
 
-"Democracy," from ancient Greek = *dêmos* (people) + *kratía* (power).
+> "Democracy," from ancient Greek = *dêmos* (people) + *kratía* (power).
 
 The people have the power. That's the cry of revolutionary movements, a
 high ideal. Fiona loves to see this attitude come alive in new
@@ -215,11 +204,9 @@ advantage. The very same system can enable democracy in one era, and
 hobble it in the next.
 
 Power always resides with someone -- the question is how many people.
-Democracy means it resides with as many people as possible. *→ why does
-this deserve to be the definition of democracy? Because the layers on
-top are self-contradictory? Is that what i spent 4 paras saying?*
+Democracy means it resides with as many people as possible.
 
-Power corrupts -- sometimes {#power-corrupts----sometimes}
+Power corrupts -- sometimes {#power-corrupts-sometimes}
 ----------------------------
 
 If one person or a tight group of people have most of the power, then
@@ -380,7 +367,7 @@ People who "get a government" must not have had much power to begin
 with. This language paints a picture in which the people are not
 self-governing, and the functions of leadership and representation have
 calcified into professions unfamiliar to the general public. Recall that
-power is essentially active: people only have it to the extent they\'re
+power is essentially active: people only have it to the extent they're
 accustomed to using it.
 
 Of course, governments do need some trained professionals to perform

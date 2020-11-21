@@ -35,7 +35,7 @@ class T {
 
     function article_listing($url, $title, $date, $desc) {
         ?>
-            <div class=article-listing contenteditable>
+            <div class=article-listing>
                 <h3><a href="<?= $url ?>"><?= self::markdown_inline($title) ?></a></h3>
                 <time><?= self::markdown_inline($date) ?></time>
                 <?= self::markdown_to_html($desc) ?>
@@ -65,7 +65,7 @@ class T {
                 <span class=ego>Linus Rachlis</span>
                 <script>
                     (function () {
-                        var emojis = ['💾', '💻', '👾', '🎸'];
+                        var emojis = ['💾', '💻', '👾', '🎸', '🌎', '🚴‍♂️', '☕️'];
                         document.write(emojis[Math.floor(Math.random() * emojis.length)])
                     })();
                 </script>

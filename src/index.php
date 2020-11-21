@@ -49,7 +49,13 @@ T::article_listing(
     'What We Talk About When We Talk About Democracy',
     'May 2018',
     <<<DESC
-We say democracy is now in crisis where it was thought to be most stable. We say democracy is vital; we say it's inefficient. We call it the worst form of government except for all the others. We keep using this word, but do we even agree on what it means? A long read
+
+We say democracy is now in crisis where it was thought to be most stable. We
+say democracy is vital; we say it's inefficient. We call democracy the worst form of
+government except for all the others. Like _love_, this word means too much and
+therefore too little. How will we then know if we have lost it? A long read to
+renew a deceptively simple concept.
+
 DESC
 );
 
