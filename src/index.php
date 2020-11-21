@@ -33,7 +33,7 @@ off my mind.") ?>
         </section>
 
         <section class=vert-header>
-            <h2>Society</h2>
+            <h2>Essays</h2>
 <?
 T::article_listing(
     '/essays/new-deal-or-bust/',
@@ -45,11 +45,11 @@ DESC
 );
 
 T::article_listing(
-    '/essays/what-we-talk-about-when-we-talk-about-democracy/',
+    '/essays/democracy/',
     'What We Talk About When We Talk About Democracy',
     'May 2018',
     <<<DESC
-Curabitur id tristique lorem. Vestibulum egestas, felis et accumsan laoreet, risus tortor ornare risus, id scelerisque velit nunc non eros.
+We say democracy is now in crisis where it was thought to be most stable. We say democracy is vital; we say it's inefficient. We call it the worst form of government except for all the others. We keep using this word, but do we even agree on what it means? A long read
 DESC
 );
 

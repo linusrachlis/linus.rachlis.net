@@ -69,6 +69,9 @@ class T {
                         document.write(emojis[Math.floor(Math.random() * emojis.length)])
                     })();
                 </script>
+                <? if ($_SERVER['REQUEST_URI'] != '/') { ?>
+                <a href="/">Home</a>
+                <? } ?>
             </h1>
         </header>
 
@@ -93,6 +96,26 @@ class T {
     </body>
 
 </html>
+        <?php
+    }
+
+    function article_head($title, $date) {
+        ?>
+        <article>
+
+            <div class=article-head>
+                <h1><?= self::markdown_inline($title) ?></h1>
+                <time><?= self::markdown_inline($date) ?></time>
+            </div>
+
+            <div class=article-body>
+        <?php
+    }
+
+    function article_foot() {
+        ?>
+            </div>
+        </article>
         <?php
     }
 }

@@ -3,6 +3,7 @@
 $pages = [
     'index',
     'essays/tentanda-via/index',
+    'essays/democracy/index',
 ];
 
 $css_files = [

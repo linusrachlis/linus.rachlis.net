@@ -1,21 +1,17 @@
 <?php
-$title = 'Tentanda Via: why I stopped donating to YorkU, my alma mater';
-T::head($title);
-// T::article_head($title);
+T::head('Tentanda Via: why I stopped donating to YorkU, my alma mater');
+T::article_head(
+    '_Tentanda Via_: why I stopped donating to YorkU, my alma mater',
+    'October 2016'
+);
 ?>
-
-<article>
 
 <?php T::markdown_begin() ?>
 
-# _Tentanda Via_: why I stopped donating to YorkU, my alma mater
-
-<p class=date><time>October 2016</time></p>
-
 Dear members of the Board of Governors of York University,
 
-I'm a LA&PS alumnus, and here's why I cancelled my monthly donation to
-York last year.
+I'm a Liberal Arts & Professional Studies alum, and here's why I
+cancelled my monthly donation to York last year.
 
 In October 2015, Canadian billionaire Victor Dahdaleh made a $20-million
 donation to York that will fund a new academic building, to be named
@@ -33,7 +29,7 @@ I would have expected these revelations to change York's plans. Instead,
 at the June 2016 convocation, York bestowed an honorary doctor of laws
 on Dahdaleh. He addressed the graduating class, encouraging them to be
 good citizens like him. York President Mamdouh Shoukri [shrugged off
-questions](http://www.cbc.ca/news/canada/toronto/panama-papers-victor-dahdaleh-york-university-honorary-degree-1.3644284)
+questions][cbc2]
 of Dahdaleh's suitability as a role model.
 
 Continuing York's friendship with Dahdaleh was a serious mistake. You're
@@ -88,7 +84,7 @@ returning his donation was feasible.
 Moreover, cutting ties with Dahdaleh would have been best for long-term
 revenue. That $305 million from the people of Ontario didn't come from
 some abstract notion of stimulating the economy. That's the conventional
-argument for increased funding for universities, and it doesn't work \--
+argument for increased funding for universities, and it doesn't work --
 [the decline
 continues](http://www.cbc.ca/news/canada/where-do-canada-s-post-secondary-dollars-go-1.2994476).
 The public will want to fund York if you can lead us to a more equal,
@@ -98,7 +94,7 @@ murkiest ethical questions.
 
 York does this on some level, with a variety of humanities programs and
 symposia such as October's [Re-imagining
-Refuge](http://yfile.news.yorku.ca/2016/10/12/rt-hon-adrienne-clarkson-to-open-symposium-on-international-refugees/).
+Refuge][refuge].
 But if this productive ethical questioning doesn't go straight to the
 top, then it's limited to the status of hobby. It should be York's chief
 occupation, but your continued friendship with Dahdaleh shows it isn't.
@@ -120,10 +116,11 @@ Linus Rachlis
 
 [torstar]: https://www.thestar.com/news/world/2016/05/25/panama-papers-british-canadian-billionaire-mysterious-middleman-in-corruption-scheme.html
 [cbc]: http://www.cbc.ca/news/business/panama-papers-victor-dahdaleh-alcoa-bribery-case-1.3598527
+[cbc2]: http://www.cbc.ca/news/canada/toronto/panama-papers-victor-dahdaleh-york-university-honorary-degree-1.3644284
+[refuge]: http://yfile.news.yorku.ca/2016/10/12/rt-hon-adrienne-clarkson-to-open-symposium-on-international-refugees/
 
-<?php T::markdown_end() ?>
-
-    </article>
 <?php
-// T::article_foot();
+
+T::markdown_end();
+T::article_foot();
 T::foot();

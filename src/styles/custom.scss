@@ -7,11 +7,13 @@ a, a:visited, a:active, a:hover {
     text-decoration: underline;
 }
 
-section:first-child, p:first-child {
-    margin-top: 0;
-}
-section:last-child, p:last-child {
-    margin-bottom: 0;
+.container {
+    section:first-child, p:first-child, h1:first-child {
+        margin-top: 0;
+    }
+    section:last-child, p:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .article-listing {
@@ -62,7 +64,7 @@ section:last-child, p:last-child {
         border-left: 3px double black;
         margin-left: 3rem;
         max-width: 40em;
-        padding-top: 1rem;
+        padding-top: 1px; // just to prevent weird gap
 
         section {
             margin: 4em 0;
@@ -100,6 +102,42 @@ section:last-child, p:last-child {
 
                 font: 1.25rem 'Josefin Sans', sans-serif;
                 margin: 0;
+            }
+        }
+
+        article {
+            .article-head {
+                padding: 1.5rem;
+                border-bottom: 1px solid black;
+
+                h1 {
+                    font: bold 1.5rem/1.2 'Josefin Sans', sans-serif;
+                }
+
+                time {
+                    font: italic normal 0.9em Radley;
+                }
+            }
+
+            .article-body {
+                padding: 1.5rem;
+                line-height: 1.5;
+
+                h2 {
+                    font: bold 1.25rem/1.2 'Josefin Sans', sans-serif;
+                    margin: 2rem 0 1rem 0;
+                }
+
+                h3 {
+                    font: normal 1.1rem/1.2 'Josefin Sans', sans-serif;
+                    margin: 1rem 0;
+                }
+
+                ol, ul {
+                    li {
+                        margin: 1em 0;
+                    }
+                }
             }
         }
     }
