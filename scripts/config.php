@@ -2,15 +2,14 @@
 
 $pages = [
     'index',
-    'cookies/index',
-    'cookies/websites-and-memory',
-    'cookies/anonymous',
-    'cookies/consent',
+    'essays/tentanda-via/index',
 ];
 
 $css_files = [
     'normalize',
     'main',
+];
+$scss_files = [
     'custom',
 ];
 

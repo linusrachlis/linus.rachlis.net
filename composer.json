@@ -1,6 +1,7 @@
 {
     "require": {
         "michelf/php-markdown": "^1.9",
-        "michelf/php-smartypants": "^1.8"
+        "michelf/php-smartypants": "^1.8",
+        "scssphp/scssphp": "^1.4"
     }
 }

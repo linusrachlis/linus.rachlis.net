@@ -1,6 +1,9 @@
 <?php
 
+require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/config.php';
+
+use ScssPhp\ScssPhp\Compiler;
 
 $dist_dir = __DIR__ . '/../dist';
 
@@ -24,6 +27,14 @@ foreach ($pages as $page) {
 
 $css_code = '';
 foreach ($css_files as $css_file) {
-    $css_code .= file_get_contents("$src_dir/css/$css_file.css") . PHP_EOL;
+    $css_code .= file_get_contents("$src_dir/styles/$css_file.css") . PHP_EOL;
 }
+
+$scss = new Compiler();
+$scss_code = '';
+foreach ($scss_files as $scss_file) {
+    $scss_code = file_get_contents("$src_dir/styles/$scss_file.scss");
+    $css_code .= $scss->compile($scss_code) . PHP_EOL;
+}
+
 file_put_contents("$dist_dir/style.css", $css_code);

@@ -1,6 +1,9 @@
 <?php
 
+require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/config.php';
+
+use ScssPhp\ScssPhp\Compiler;
 
 $request_uri = $_SERVER['REQUEST_URI'];
 
@@ -19,9 +22,16 @@ foreach ($pages as $page) {
 if ($request_uri == '/style.css') {
     header('Content-type: text/css');
     foreach ($css_files as $css_file) {
-        readfile("$src_dir/css/$css_file.css");
+        readfile("$src_dir/styles/$css_file.css");
         echo PHP_EOL;
     }
+
+    $scss = new Compiler();
+    foreach ($scss_files as $scss_file) {
+        $scss_code = file_get_contents("$src_dir/styles/$scss_file.scss");
+        echo $scss->compile($scss_code) . PHP_EOL;
+    }
+
     exit;
 }
 

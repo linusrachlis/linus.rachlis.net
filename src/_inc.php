@@ -35,7 +35,7 @@ class T {
 
     function article_listing($url, $title, $date, $desc) {
         ?>
-            <div class=article-listing>
+            <div class=article-listing contenteditable>
                 <h3><a href="<?= $url ?>"><?= self::markdown_inline($title) ?></a></h3>
                 <time><?= self::markdown_inline($date) ?></time>
                 <?= self::markdown_to_html($desc) ?>
@@ -49,22 +49,38 @@ class T {
 <html>
 
 <head>
-    <title><?= isset($title) ? self::typograph($title) : 'Linus Rachlis &mdash; Essays' ?></title>
+    <title><?= isset($title) ? self::typograph($title) : 'Linus Rachlis' ?></title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Radley:ital@0;1&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Radley:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
-        <?php
+    <header>
+            <h1>
+                <span class=ego>Linus Rachlis</span>
+                <script>
+                    (function () {
+                        var emojis = ['💾', '💻', '👾', '🎸'];
+                        document.write(emojis[Math.floor(Math.random() * emojis.length)])
+                    })();
+                </script>
+            </h1>
+        </header>
+
+        <main>
+            <div class=container>
+                <?php
     }
 
     function foot() {
         ?>
+            </div>
+        </main>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <!--

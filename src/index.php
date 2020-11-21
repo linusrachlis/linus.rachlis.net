@@ -1,20 +1,4 @@
 <? T::head() ?>
-<div class=container>
-    <header>
-        <h1>
-            <span class=ego>Linus Rachlis</span>
-            <script>
-                (function () {
-                    var emojis = ['💾', '💻', '👾', '🎸'];
-                    document.write(emojis[Math.floor(Math.random() * emojis.length)])
-                })();
-            </script>
-            Essays
-        </h1>
-    </header>
-
-    <main>
-
         <section class=quotation>
 
             <p>If you don't give them a better analogy to replace the one that
@@ -52,7 +36,7 @@ off my mind.") ?>
             <h2>Society</h2>
 <?
 T::article_listing(
-    '/new-deal-or-bust/',
+    '/essays/new-deal-or-bust/',
     'New Deal or Bust',
     'May 2019',
     <<<DESC
@@ -61,7 +45,7 @@ DESC
 );
 
 T::article_listing(
-    '/what-we-talk-about-when-we-talk-about-democracy/',
+    '/essays/what-we-talk-about-when-we-talk-about-democracy/',
     'What We Talk About When We Talk About Democracy',
     'May 2018',
     <<<DESC
@@ -70,11 +54,11 @@ DESC
 );
 
 T::article_listing(
-    '/tentanda-via/',
+    '/essays/tentanda-via/',
     '_Tentanda Via_: why I stopped donating to YorkU, my alma mater',
     'October 2016',
     <<<DESC
-Duis vel eleifend augue. Morbi aliquet leo nisi, nec pellentesque lectus pretium id.
+Okay, I was only giving $5 a month, but I still took it pretty personally when they honoured a corrupt billionaire for $20 million. I make the argument that universities' moral leadership will determine their level of public funding.
 DESC
 );
 
@@ -97,21 +81,7 @@ DESC
 // );
 
 ?>
-            
-        </section>
 
-        <section class=vert-header contenteditable>
-<? T::markdown_begin() ?>
-
-## Software
-
-Mauris volutpat, nulla id porttitor eleifend, odio massa finibus ligula, sit amet pharetra urna dolor ut ante. Curabitur id tristique lorem.
-
-Vestibulum egestas, felis et accumsan laoreet, risus tortor ornare risus, id scelerisque velit nunc non eros. Nulla sem nibh, fermentum tristique lorem eu, convallis mollis elit.
-
-Duis vel eleifend augue. Morbi aliquet leo nisi, nec pellentesque lectus pretium id. Maecenas condimentum tincidunt arcu, a porta urna aliquet ut. Nam venenatis dui non dapibus molestie. Duis mollis odio nec sapien consectetur, nec gravida diam lacinia. Curabitur a turpis at ex facilisis imperdiet at et nisi. Vivamus sollicitudin est a eros convallis dapibus. Aliquam erat volutpat.
-
-<? T::markdown_end() ?>
         </section>
 
         <section class=vert-header contenteditable>
@@ -128,5 +98,4 @@ Mauris volutpat, nulla id porttitor eleifend, odio massa finibus ligula, sit ame
 .
 <? T::markdown_end() ?>
         </section>
-</div>
 <? T::foot();
