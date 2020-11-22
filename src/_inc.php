@@ -122,6 +122,9 @@ class T {
     function article_foot() {
         ?>
             </div>
+            <div class=article-foot>
+                <a href="/">🏡 Home</a>
+            </div>
         </article>
         <?php
     }
