@@ -65,8 +65,15 @@ class T {
                 <span class=ego>Linus Rachlis</span>
                 <script>
                     (function () {
-                        var emojis = ['💾', '💻', '👾', '🎸', '🌎', '🚴‍♂️', '☕️'];
-                        document.write(emojis[Math.floor(Math.random() * emojis.length)])
+                        var emojis = [
+                            '💾', '💻', '👾', '🎸', '🌎', '🚴‍♂', '☕️', '🪐',
+                            '🖖', '👨‍👩‍👦', '🧙‍♂️','🐒', '🐢', '🍁', '🎧',
+                            '🕹', '🖋'
+                        ];
+                        for (var i = 0; i < 2; i++) {
+                            var j = Math.floor(Math.random() * emojis.length);
+                            document.write(emojis.splice(j, 1));
+                        }
                     })();
                 </script>
                 <? if ($_SERVER['REQUEST_URI'] != '/') { ?>
