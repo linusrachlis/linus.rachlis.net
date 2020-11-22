@@ -35,12 +35,31 @@ off my mind.") ?>
         <section class=vert-header>
             <h2>Essays</h2>
 <?
+
 T::article_listing(
-    '/essays/new-deal-or-bust/',
-    'New Deal or Bust',
+    '/essays/where-are-we-supposed-to-go/',
+    '"Where are we supposed to go?" Why the 99% struggle to win elections.',
     'May 2019',
     <<<DESC
-Mauris volutpat, nulla id porttitor eleifend, odio massa finibus ligula, sit amet pharetra urna dolor ut ante.
+
+A progressive political candidate approaches the mic, pushes up their
+glasses, and recites a list of policies to benefit the 99%, with
+supporting facts. Then they lose the election. Why does this keep
+happening? I illustrate the importance of mythology in leadership by
+proposing we imagine the economy upside-down and backwards.
+
+DESC
+);
+
+T::article_listing(
+    '/essays/lets-talk-about-bell/',
+    "Let's Talk About Bell",
+    'February 2019',
+    <<<DESC
+
+There's a place for corporate citizenship, but you can't talk about
+citizenship without taxes.
+
 DESC
 );
 
@@ -60,31 +79,31 @@ DESC
 );
 
 T::article_listing(
+    '/essays/the-inconvenience-of-memory/',
+    'The Inconvenience of Memory',
+    'April 2017',
+    <<<DESC
+
+A century after Canada's most famous and bloodiest battle, what does
+remembering look like, and why does it matter? What does forgetting look
+like?
+
+DESC
+);
+
+T::article_listing(
     '/essays/tentanda-via/',
     '_Tentanda Via_: why I stopped donating to YorkU, my alma mater',
     'October 2016',
     <<<DESC
-Okay, I was only giving $5 a month, but I still took it pretty personally when they honoured a corrupt billionaire for $20 million. I make the argument that universities' moral leadership will determine their level of public funding.
+
+Okay, I was only giving five dollars a month, but I still took it pretty
+personally when they honoured a corrupt billionaire for $20 million. I
+make the argument that universities' moral leadership will determine
+their level of public funding.
+
 DESC
 );
-
-// T::article_listing(
-//     '',
-//     '',
-//     '',
-//     <<<DESC
-
-// DESC
-// );
-
-// T::article_listing(
-//     '',
-//     '',
-//     '',
-//     <<<DESC
-
-// DESC
-// );
 
 ?>
 

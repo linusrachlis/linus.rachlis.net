@@ -1,10 +1,15 @@
 <?php
 
+$src_dir = __DIR__ . '/../src';
+
 $pages = [
     'index',
-    'essays/tentanda-via/index',
-    'essays/democracy/index',
 ];
+
+$essays = glob($src_dir . '/essays/*', GLOB_ONLYDIR);
+foreach ($essays as $essay_dir) {
+    $pages[] = substr($essay_dir, strlen($src_dir) + 1) . '/index';
+}
 
 $css_files = [
     'normalize',
@@ -13,5 +18,3 @@ $css_files = [
 $scss_files = [
     'custom',
 ];
-
-$src_dir = __DIR__ . '/../src';

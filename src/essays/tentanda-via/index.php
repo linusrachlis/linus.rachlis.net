@@ -40,7 +40,7 @@ and money laundering are illegal for good reason. They damage economies,
 and ordinary people suffer the consequences, while billionaires like him
 leap to their next perch.
 
-In October 2016, after [criticism](http://www.excal.on.ca/dahdaleh-senate-meeting/)
+In October 2016, after [criticism](excal)
 from York Senate member and economics Professor Ricardo Grinspun,
 Shoukri pointed out that Dahdaleh has never been convicted of a crime.
 From 2008-2014, Dahdaleh successfully fought a U.S. fraud lawsuit as
@@ -75,7 +75,7 @@ revenue](http://www.yorku.ca/finance/documents/Financial_Statements_April_30_201
 Students themselves are the largest single contributor, paying $520
 million in tuition fees last year. The province of Ontario provided
 [$305
-million](https://www.ontario.ca/data/operating-grants-colleges-and-universities)
+million](https://data.ontario.ca/dataset/operating-grants-to-colleges-and-universities)
 for 2012-13 (the most recent data available). For two years in a row,
 York has posted surpluses on the same scale as Dahdaleh's donation
 ($19.9 million for 2014-15, and $23.3 million for 2015-16). Refusing or
@@ -118,6 +118,7 @@ Linus Rachlis
 [cbc]: http://www.cbc.ca/news/business/panama-papers-victor-dahdaleh-alcoa-bribery-case-1.3598527
 [cbc2]: http://www.cbc.ca/news/canada/toronto/panama-papers-victor-dahdaleh-york-university-honorary-degree-1.3644284
 [refuge]: http://yfile.news.yorku.ca/2016/10/12/rt-hon-adrienne-clarkson-to-open-symposium-on-international-refugees/
+[excal]: https://web.archive.org/web/20190204103647/https://excal.on.ca/dahdaleh-senate-meeting/
 
 <?php
 
