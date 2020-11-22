@@ -109,18 +109,15 @@ DESC
 
         </section>
 
-        <section class=vert-header contenteditable>
-<? T::markdown_begin() ?>
-
-## Elsewhere
-
-Mauris volutpat, nulla id porttitor eleifend, odio massa finibus ligula, sit amet pharetra urna dolor ut ante. Curabitur id tristique lorem.
-
-.
-
-.
-
-.
-<? T::markdown_end() ?>
+        <section class=vert-header style="min-height: 6em;">
+            <h2>So Long</h2>
+            <ul style="padding-left: 1em;">
+                <li style="list-style-type: '📬';">
+                    <a href="mailto:linus@rachlis.net">linus@rachlis.net</a>
+                </li>
+                <li style="list-style-type: '💼';">
+                    <a href="https://www.linkedin.com/in/linusrachlis/">LinkedIn</a>
+                </li>
+            </ul>
         </section>
 <? T::foot();
