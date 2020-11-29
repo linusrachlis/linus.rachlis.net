@@ -53,7 +53,6 @@ class T {
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Radley:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
@@ -106,13 +105,16 @@ class T {
         <?php
     }
 
-    function article_head($title, $date) {
+    function article_head($title, $date, $subtitle = null) {
         ?>
         <article>
 
             <div class=article-head>
                 <h1><?= self::markdown_inline($title) ?></h1>
-                <time><?= self::markdown_inline($date) ?></time>
+                <? if (isset($subtitle)) { ?>
+                <div class=subtitle><?= self::markdown_inline($subtitle) ?></div>
+                <? } ?>
+                <div><time><?= self::markdown_inline($date) ?></time></div>
             </div>
 
             <div class=article-body>

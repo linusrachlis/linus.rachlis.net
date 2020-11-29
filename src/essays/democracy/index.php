@@ -1,7 +1,7 @@
 <?php
 $title = 'What We Talk About When We Talk About Democracy';
 T::head($title);
-T::article_head($title, 'May 2018');
+T::article_head($title, 'May 2018', '(With apologies to Raymond Carver.)');
 ?>
 
 <?php T::markdown_begin() ?>
@@ -51,10 +51,8 @@ confused it with free markets. Fully digging it out of obscurity will
 keep us oriented as we step into leadership, taking the path of most
 resistance.
 
-What we talk about when we talk about democracy {#what-we-talk-about-when-we-talk-about-democracy}
+The parts of the elephant
 -----------------------------------------------
-
-*(With apologies to Raymond Carver.)*
 
 I said we normally invoke only fragments of democracy's full meaning.
 Here are the fragments I've seen lately:

@@ -9,7 +9,7 @@
 
         </section>
 
-        <section class=vert-header>
+        <section class="regular hello">
 <? T::markdown_begin() ?>
 
 ## Hello
@@ -32,13 +32,13 @@ off my mind.") ?>
 
         </section>
 
-        <section class=vert-header>
+        <section class=regular>
             <h2>Essays</h2>
 <?
 
 T::article_listing(
     '/essays/where-are-we-supposed-to-go/',
-    '"Where are we supposed to go?" Why the 99% struggle to win elections.',
+    '"Where are we supposed to go?" Why the 99% struggle to win elections',
     'May 2019',
     <<<DESC
 
@@ -109,7 +109,7 @@ DESC
 
         </section>
 
-        <section class=vert-header style="min-height: 6em;">
+        <section class="regular so-long">
             <h2>So Long</h2>
             <ul style="padding-left: 1em;">
                 <li style="list-style-type: '📬';">

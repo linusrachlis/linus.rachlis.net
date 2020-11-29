@@ -1,5 +1,5 @@
 <?php
-$title = '"Where are we supposed to go?" Why the 99% struggle to win elections.';
+$title = '"Where are we supposed to go?" Why the 99% struggle to win elections';
 T::head($title);
 T::article_head($title, 'May 2019');
 ?>

@@ -12,6 +12,15 @@ a, a:visited, a:active, a:hover {
     text-decoration: underline;
 }
 
+header {
+    padding: 0 1rem;
+
+    h1 {
+        font: normal 1.25rem 'Josefin Sans', sans-serif;
+    }
+    h1 .ego { font-weight: bold; }
+}
+
 .container {
     section:first-child, p:first-child, h1:first-child {
         margin-top: 0;
@@ -19,51 +28,203 @@ a, a:visited, a:active, a:hover {
     section:last-child, p:last-child {
         margin-bottom: 0;
     }
+
+    section {
+        li { padding-left: 0.4em; }
+
+        &.quotation {
+            font-style: italic;
+            text-align: center;
+            font-size: 90%;
+
+            margin: 2em auto;
+        }
+
+        h2 {
+            font: 1.25rem 'Josefin Sans', sans-serif;
+        }
+
+        .article-listing {
+            margin-bottom: 2em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            h3 {
+                font: bold 1.1em/1.4 'Josefin Sans';
+                margin-bottom: 0;
+            }
+            time {
+                display: block;
+                margin: 0;
+                font: italic normal 0.9em Radley;
+            }
+            h3 + time + p {
+                margin-top: .5em;
+            }
+            h3 a {
+                text-decoration: none;
+                border-bottom: 1px dotted black;
+            }
+        }
+    }
+
+    article {
+        .article-head {
+            padding: 1.5rem;
+            border-bottom: 1px solid black;
+
+            h1 {
+                font: bold 1.5rem/1.2 'Josefin Sans', sans-serif;
+            }
+            .subtitle {
+                font: normal 1rem/1.2 'Josefin Sans', sans-serif;
+                margin: .67em 0;
+            }
+            time {
+                font: italic normal 0.9em Radley;
+            }
+        }
+
+        .article-body {
+            padding: 1rem;
+
+            h2 {
+                font: bold 1.25rem/1.2 'Josefin Sans', sans-serif;
+            }
+
+            h3 {
+                font: normal 1.1rem/1.2 'Josefin Sans', sans-serif;
+            }
+
+            h2 {
+                margin: 2rem 0 1rem 0;
+            }
+
+            h3 {
+                margin: 1rem 0;
+            }
+
+            ol, ul {
+                padding-left: 1.2em;
+
+                li {
+                    margin: 1em 0;
+                }
+            }
+
+            blockquote {
+                line-height: 1.5;
+                font-size: 115%;
+                margin-top: 1.2em;
+                margin-bottom: 1.2em;
+            }
+
+        }
+
+        .article-foot {
+            padding: 1.5rem;
+            border-top: 1px solid black;
+        }
+    }
 }
 
-section li {
-    padding-left: 0.4em;
+@media only screen and (max-width: 479px) {
+    body {
+        // Milder reading contrast on a small screen held close to your face
+        background-color: antiquewhite;
+        color: black;
+    }
+
+    .container {
+        section {
+            &.quotation {
+                margin-left: 1.5em;
+                margin-right: 1.5em;
+            }
+
+            &.regular {
+                padding: 1px 1rem;
+            }
+
+            h2 {
+                padding: .5rem;
+                margin: 0 -1rem;
+                border-bottom: 1px solid black;
+            }
+        }
+    }
 }
 
-.article-listing {
-    margin-bottom: 2em;
-}
-.article-listing:last-child {
-    margin-bottom: 0;
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 17px;
+    }
+
+    .container {
+        article {
+            .article-body {
+                padding: 1.5rem;
+                font-size: 105%;
+                line-height: 1.5;
+
+                ol, ul {
+                    padding-left: 1.8em;
+                }
+            }
+        }
+    }
 }
 
-.article-listing h3 {
-    font: bold 1em 'Josefin Sans';
-    margin-bottom: 0;
-}
-.article-listing time {
-    display: block;
-    margin: 0;
-    font: italic normal 0.9em Radley;
-}
-.article-listing h3 + time + p {
-    margin-top: .5em;
-}
-.article-listing h3 a {
-    text-decoration: none;
-    border-bottom: 1px dotted black;
+@media only screen and (max-width: 767px) {
+    .container {
+        border-top: 3px double black;
+
+        section {
+            margin: 3em 0;
+
+            &.quotation {
+                border-left: 1px dotted black;
+                border-right: 1px dotted black;
+                padding: 0 1em;
+                margin-top: 3em;
+                margin-bottom: 3em;
+            }
+
+            &.hello {
+                h2 {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
 }
 
-.article-body {
-    font-size: 105%;
-}
-.article-body blockquote {
-    line-height: 1.5;
-    font-size: 115%;
-    margin-top: 1.2em;
-    margin-bottom: 1.2em;
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        section {
+            &.quotation {
+                max-width: 27em;
+            }
+
+            &.regular {
+                padding: 1px 2rem;
+            }
+
+            h2 {
+                padding: 1rem;
+                margin: 0 -2rem;
+                border-bottom: 1px solid black;
+            }
+        }
+
+    }
 }
 
 @media only screen and (min-width: 768px) {
     header {
         display: inline-block;
-        background-color: transparent;
-        color: black;
         padding: 0.65rem;
 
         position: fixed;
@@ -73,10 +234,8 @@ section li {
         transform-origin: 0 0;
 
         h1 {
-            font: normal 1.25rem 'Josefin Sans', sans-serif;
             margin: 0;
         }
-        h1 .ego { font-weight: bold; }
     }
 
     .container {
@@ -89,28 +248,25 @@ section li {
             margin: 4em 0;
 
             &.quotation {
+                width: 60%;
                 border-top: 1px dotted black;
                 border-bottom: 1px dotted black;
-                font-style: italic;
-                text-align: center;
-                font-size: 90%;
-
-                width: 60%;
-                margin: 2em auto;
                 padding: 1em 0;
             }
 
-            &.vert-header {
+            &.regular {
                 position: relative;
                 margin-left: 2.5rem;
                 padding-left: 1rem;
                 border-left: 1px solid black;
             }
 
+            &.so-long {
+                min-height: 7em;
+            }
+
             h2 {
                 display: inline-block;
-                background-color: transparent;
-                color: black;
                 padding: .5rem;
 
                 position: absolute;
@@ -119,49 +275,15 @@ section li {
                 transform: rotateZ(-90deg) translate(-100%);
                 transform-origin: 0 0;
 
-                font: 1.25rem 'Josefin Sans', sans-serif;
                 margin: 0;
             }
         }
 
         article {
-            .article-head {
-                padding: 1.5rem;
-                border-bottom: 1px solid black;
-
-                h1 {
-                    font: bold 1.5rem/1.2 'Josefin Sans', sans-serif;
-                }
-
-                time {
-                    font: italic normal 0.9em Radley;
-                }
-            }
-
             .article-body {
-                padding: 1.5rem;
-                line-height: 1.5;
-
-                h2 {
-                    font: bold 1.25rem/1.2 'Josefin Sans', sans-serif;
-                    margin: 2rem 0 1rem 0;
-                }
-
-                h3 {
-                    font: normal 1.1rem/1.2 'Josefin Sans', sans-serif;
-                    margin: 1rem 0;
-                }
-
                 ol, ul {
-                    li {
-                        margin: 1em 0;
-                    }
+                    padding-left: 2.4em;
                 }
-            }
-
-            .article-foot {
-                padding: 1.5rem;
-                border-top: 1px solid black;
             }
         }
     }

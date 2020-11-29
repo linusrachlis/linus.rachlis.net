@@ -110,8 +110,7 @@ right. As you consider who your next president will be, I urge you to
 choose someone who will do better. Canada needs your leadership, and you
 need our commitment. *Tentanda via.*
 
-Sincerely,
-
+Sincerely,  
 Linus Rachlis
 
 [torstar]: https://www.thestar.com/news/world/2016/05/25/panama-papers-british-canadian-billionaire-mysterious-middleman-in-corruption-scheme.html
