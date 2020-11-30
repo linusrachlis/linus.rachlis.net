@@ -47,6 +47,7 @@ glasses, and recites a list of policies to benefit the 99%, with
 supporting facts. Then they lose the election. Why does this keep
 happening? I illustrate the importance of mythology in leadership by
 proposing we imagine the economy upside-down and backwards.
+*(10&nbsp;mins)*
 
 DESC
 );
@@ -58,7 +59,7 @@ T::article_listing(
     <<<DESC
 
 There's a place for corporate citizenship, but you can't talk about
-citizenship without taxes.
+citizenship without taxes. *(5&nbsp;mins)*
 
 DESC
 );
@@ -69,11 +70,12 @@ T::article_listing(
     'May 2018',
     <<<DESC
 
-We say democracy is now in crisis where it was thought to be most stable. We
-say democracy is vital; we say it's inefficient. We call democracy the worst form of
-government except for all the others. Like _love_, this word means too much and
-therefore too little. How will we then know if we have lost it? A long read to
-renew a deceptively simple concept.
+We say democracy is now in crisis where it was thought to be most
+stable. We say democracy is vital; we say it's inefficient. We call
+democracy the worst form of government except for all the others. Like
+_love_, this word means too much and therefore too little. How will we
+then know if we have lost it? A long read to renew a deceptively simple
+concept. *(30&nbsp;mins)*
 
 DESC
 );
@@ -86,7 +88,7 @@ T::article_listing(
 
 A century after Canada's most famous and bloodiest battle, what does
 remembering look like, and why does it matter? What does forgetting look
-like?
+like? *(10&nbsp;mins)*
 
 DESC
 );
@@ -100,7 +102,7 @@ T::article_listing(
 Okay, I was only giving five dollars a month, but I still took it pretty
 personally when they honoured a corrupt billionaire for $20 million. I
 make the argument that universities' moral leadership will determine
-their level of public funding.
+their level of public funding. *(4&nbsp;mins)*
 
 DESC
 );
