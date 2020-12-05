@@ -51,7 +51,7 @@ confused it with free markets. Fully digging it out of obscurity will
 keep us oriented as we step into leadership, taking the path of most
 resistance.
 
-The parts of the elephant
+Dusting off the pieces {#dusting-off-the-pieces}
 -----------------------------------------------
 
 I said we normally invoke only fragments of democracy's full meaning.
@@ -204,7 +204,7 @@ hobble it in the next.
 Power always resides with someone -- the question is how many people.
 Democracy means it resides with as many people as possible.
 
-Power corrupts -- sometimes {#power-corrupts-sometimes}
+The nature of power {#the-nature-of-power}
 ----------------------------
 
 If one person or a tight group of people have most of the power, then
@@ -382,11 +382,15 @@ service and public policy consumerism.
 Vote with your dollars {#vote-with-your-dollars}
 ----------------------
 
-The idea of expressing one's values and influencing the world by
-choosing one company's products over another is at the heart of the
-modern conflation of free markets and democracy. But the fact that
-anyone would seriously utter these words reveals that they already
-thought of voting as a consumer activity.
+I mentioned the conflation of free markets and democracy -- that doomed romance
+of the late twentieth century. Supposedly, the freedom of capitalists to build
+empires went hand-in-hand with the freedom of consumers to express their values
+by choosing one company's products over another's.
+
+But the fact that anyone would seriously utter the above phrase reveals that
+they already thought of voting as a consumer activity. Capitalists argued that
+free markets were modelled on democracy. Instead, we ended up modelling our
+democracy on capitalism.
 
 In some societies, political parties act like corporations vying for the
 contract to be the exclusive provider of public policy and public
@@ -563,22 +567,15 @@ of fight-or-flight mode. Relaxing works stepwise, as with nuclear
 disarmament treaties. Lowering the material stakes is important, but the
 key is building trust.
 
-Trust among citizens is key not only because it allows life to be
-enjoyable, but because, by absorbing shocks, trust allows power to take
-on the many nuanced forms necessary for living together densely. A group
-of people with guns pointed at each other may be said to share power,
-but the arrangement ends at the first snag. They can't tolerate error,
-and therefore can't have meaningful debates or take risks. On the other
-hand, with trust, it's possible for some people to be hurt -- through
-error, or even malice -- without the whole arrangement exploding.
-
-But trust can only absorb so much shock, and when it's depleted, the
-only power left is the power to harm. In a small social context, trust
-may be rebuilt after error or malice through apology -- the
-demonstration of understanding and remorse with respect to having
-inflicted hurt, and a best attempt at material restitution. Deep hurt
-may require long periods of consistent action to demonstrate sincerity.
-And some hurt can't be mended.
+Trust among citizens is key not only because it allows life to be enjoyable,
+but because, by absorbing shocks, trust allows power to take on the many
+nuanced forms necessary for living together densely. But trust can only absorb
+so much shock, and when it's depleted, the only power left is the power to
+harm. In a small social context, trust may be rebuilt after error or malice
+through apology -- the demonstration of understanding and remorse with respect
+to having inflicted hurt, and a best attempt at material restitution. Deep hurt
+may require long periods of consistent action to demonstrate sincerity. And
+some hurt can't be mended.
 
 In a larger social context, the same principles operate, just with more
 complexity. Settling disagreements through contests instead of dialogue
@@ -598,7 +595,7 @@ I've made much of dialogue as compared to contests, but how are
 thousands or millions of people supposed to have a real dialogue
 together, as opposed to just hurling slogans around through mass media?
 
-Of course, the answer is representation --- but let's clarify exactly
+Of course, the answer is representation -- but let's clarify exactly
 what this means. It doesn't mean being smart enough to think up
 solutions and charismatic enough to convince people you're right.
 Neither does it mean listening slavishly to your constituents and doing

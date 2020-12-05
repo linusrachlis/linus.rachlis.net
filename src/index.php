@@ -16,7 +16,7 @@
 
 Well, this website is what happens when an idealist web developer does a
 philosophy major and then becomes a dad and a software developer in a world
-that often laughs at idealists.
+not made by idealists.
 
 <? T::markdown_end() ?>
 
@@ -75,7 +75,7 @@ stable. We say democracy is vital; we say it's inefficient. We call
 democracy the worst form of government except for all the others. Like
 _love_, this word means too much and therefore too little. How will we
 then know if we have lost it? A long read to renew a deceptively simple
-concept. *(30&nbsp;mins)*
+concept. I'll shorten it when I have more time... *(30&nbsp;mins)*
 
 DESC
 );
@@ -100,9 +100,9 @@ T::article_listing(
     <<<DESC
 
 Okay, I was only giving five dollars a month, but I still took it pretty
-personally when they honoured a corrupt billionaire for $20 million. I
-make the argument that universities' moral leadership will determine
-their level of public funding. *(4&nbsp;mins)*
+personally when they honoured a corrupt billionaire for $20&nbsp;million. I
+make the argument that universities' moral leadership will determine their
+level of public funding. *(4&nbsp;mins)*
 
 DESC
 );

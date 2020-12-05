@@ -10,8 +10,9 @@ T::article_head(
 
 Dear members of the Board of Governors of York University,
 
-I'm a Liberal Arts & Professional Studies alum, and here's why I
-cancelled my monthly donation to York last year.
+I'm a Liberal Arts & Professional Studies alum, and I valued my time at York.
+It pains me that cancelling my monthly donation feels like the right thing to
+do.
 
 In October 2015, Canadian billionaire Victor Dahdaleh made a $20-million
 donation to York that will fund a new academic building, to be named
