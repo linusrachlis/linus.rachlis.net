@@ -54,7 +54,10 @@ class T {
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Radley:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+    @import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Radley:ital@0;1&display=swap) screen and (prefers-color-scheme: light);
+    @import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100;1,100&family=IBM+Plex+Serif:ital@0;1&family=Roboto:ital,wght@0,100;1,100&family=Work+Sans:ital,wght@0,300;1,300&family=Roboto+Slab:wght@300;400&display=swap) screen and (prefers-color-scheme: dark);
+    </style>
     <link rel="stylesheet" href="/style.css">
 </head>
 

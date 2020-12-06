@@ -16,18 +16,28 @@
     --border-color: black;
     --background-color: white;
     --background-color-low-contrast: antiquewhite;
+    --body-font-family: 'Radley';
+    --body-font-weight: 400;
+    --header-font-family: 'Josefin Sans';
+    --header-font-weight-normal: 400;
+    --header-font-weight-bold: 700;
 
     @include dark-mode() {
-        --text-color: #eee;
+        --text-color: #ccc;
         --text-color-low-contrast: antiquewhite;
         --border-color: #888;
-        --background-color: #333;
-        --background-color-low-contrast: rgb(61, 57, 52);
+        --background-color: #222;
+        --background-color-low-contrast: rgb(41, 38, 35);
+        --body-font-family: 'Roboto';
+        --body-font-weight: 100;
+        --header-font-family: 'Roboto Slab';
+        --header-font-weight-normal: 300;
+        --header-font-weight-bold: 400;
     }
 }
 
 html {
-    font: 17px/1.4 'Radley', serif;
+    font: 17px/1.4 var(--body-font-family), serif;
     @include dark-mode-line-height(1.5);
 }
 
@@ -46,9 +56,9 @@ header {
     padding: 0 1rem;
 
     h1 {
-        font: normal 1.25rem 'Josefin Sans', sans-serif;
+        font: var(--header-font-weight-normal) 1.25rem var(--header-font-family), sans-serif;
     }
-    h1 .ego { font-weight: bold; }
+    h1 .ego { font-weight: var(--header-font-weight-bold); }
 }
 
 .container {
@@ -71,7 +81,7 @@ header {
         }
 
         h2 {
-            font: 1.25rem 'Josefin Sans', sans-serif;
+            font: 1.25rem var(--header-font-family), sans-serif;
         }
 
         .article-listing {
@@ -82,13 +92,13 @@ header {
             }
 
             h3 {
-                font: bold 1.1em/1.4 'Josefin Sans';
+                font: var(--header-font-weight-bold) 1.1em/1.4 var(--header-font-family);
                 margin-bottom: 0;
             }
             time {
                 display: block;
                 margin: 0;
-                font: italic normal 0.9em Radley;
+                font: italic var(--body-font-weight) 0.9em var(--body-font-family);
             }
             h3 + time + p {
                 margin-top: .5em;
@@ -106,14 +116,14 @@ header {
             border-bottom: 1px solid var(--border-color);
 
             h1 {
-                font: bold 1.5rem/1.2 'Josefin Sans', sans-serif;
+                font: var(--header-font-weight-bold) 1.5rem/1.2 var(--header-font-family), sans-serif;
             }
             .subtitle {
-                font: normal 1rem/1.2 'Josefin Sans', sans-serif;
+                font: var(--header-font-weight-normal) 1rem/1.2 var(--header-font-family), sans-serif;
                 margin: .67em 0;
             }
             time {
-                font: italic normal 0.9em Radley;
+                font: italic var(--body-font-weight) 0.9em var(--body-font-family);
             }
         }
 
@@ -121,11 +131,11 @@ header {
             padding: 1rem;
 
             h2 {
-                font: bold 1.25rem/1.2 'Josefin Sans', sans-serif;
+                font: var(--header-font-weight-bold) 1.25rem/1.2 var(--header-font-family), sans-serif;
             }
 
             h3 {
-                font: normal 1.1rem/1.2 'Josefin Sans', sans-serif;
+                font: var(--header-font-weight-normal) 1.1rem/1.2 var(--header-font-family), sans-serif;
             }
 
             h2 {
