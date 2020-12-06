@@ -14,9 +14,9 @@
 
 ## Hello
 
-Well, this website is what happens when an idealist web developer does a
-philosophy major and then becomes a dad and a software developer in a world
-not made by idealists.
+Well, this website is what happens when an idealist dreamer type adolesces as a
+web developer, does a philosophy major, and then becomes a dad and a software
+developer in a less-than-ideal world.
 
 <? T::markdown_end() ?>
 
