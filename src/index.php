@@ -1,11 +1,15 @@
 <? T::head() ?>
         <section class=quotation>
 
-            <p>If you don't give them a better analogy to replace the one that
-            wasn't working, they'll just cling to the old one anyway.</p>
+<? T::markdown_begin() ?>
 
-            <p>&mdash; <a href="https://github.com/Icetigris">Elizabeth Blaumel</a> on
-            teaching data-oriented design, Handmade Seattle conference, 2020 (paraphrase)</p>
+I wish that more people could feel things without rushing to a
+"rational" defense of the feeling. And isn't rationality itself
+often simply the attempt to make our feelings contagious?
+
+-- ContraPoints, ["Envy"](https://www.youtube.com/watch?v=aPhrTOg1RUk)
+
+<? T::markdown_end() ?>
 
         </section>
 
