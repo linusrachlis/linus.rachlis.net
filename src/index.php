@@ -1,7 +1,7 @@
-<? T::head() ?>
+<?php T::head() ?>
         <section class=quotation>
 
-<? T::markdown_begin() ?>
+<?php T::markdown_begin() ?>
 
 I wish that more people could feel things without rushing to a
 "rational" defense of the feeling. And isn't rationality itself
@@ -9,12 +9,12 @@ often simply the attempt to make our feelings contagious?
 
 -- ContraPoints, ["Envy"](https://www.youtube.com/watch?v=aPhrTOg1RUk)
 
-<? T::markdown_end() ?>
+<?php T::markdown_end() ?>
 
         </section>
 
         <section class="regular hello">
-<? T::markdown_begin() ?>
+<?php T::markdown_begin() ?>
 
 ## Hello
 
@@ -22,7 +22,7 @@ Well, this website is what happens when an idealist dreamer type adolesces as a
 web developer, does a philosophy major, and then becomes a dad and a software
 developer in a less-than-ideal world.
 
-<? T::markdown_end() ?>
+<?php T::markdown_end() ?>
 
 <ul>
     <li style="list-style-type: '⬆️';">
@@ -38,7 +38,7 @@ off my mind.") ?>
 
         <section class=regular>
             <h2>Essays</h2>
-<?
+<?php
 
 T::article_listing(
     '/essays/where-are-we-supposed-to-go/',
@@ -126,4 +126,4 @@ DESC
                 </li>
             </ul>
         </section>
-<? T::foot();
+<?php T::foot();

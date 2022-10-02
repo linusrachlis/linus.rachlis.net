@@ -75,9 +75,9 @@ class T {
                         }
                     })();
                 </script>
-                <? if ($_SERVER['REQUEST_URI'] != '/') { ?>
+                <?php if ($_SERVER['REQUEST_URI'] != '/') { ?>
                 <a href="/">Home</a>
-                <? } ?>
+                <?php } ?>
             </h1>
         </header>
 
@@ -111,9 +111,9 @@ class T {
 
             <div class=article-head>
                 <h1><?= self::markdown_inline($title) ?></h1>
-                <? if (isset($subtitle)) { ?>
+                <?php if (isset($subtitle)) { ?>
                 <div class=subtitle><?= self::markdown_inline($subtitle) ?></div>
-                <? } ?>
+                <?php } ?>
                 <div><time><?= self::markdown_inline($date) ?></time></div>
             </div>
 
