@@ -5,35 +5,35 @@ require __DIR__ . '/../vendor/autoload.php';
 use Michelf\MarkdownExtra, Michelf\SmartyPants;
 
 class T {
-    function markdown_begin() {
+    static function markdown_begin() {
         ob_start();
     }
 
-    function markdown_end() {
+    static function markdown_end() {
         $input = ob_get_clean();
         $output = self::markdown_to_html($input);
         echo $output;
     }
 
-    function markdown_to_html($input) {
+    static function markdown_to_html($input) {
         $output = MarkdownExtra::defaultTransform($input);
         $output = self::typograph($output);
         return $output;
     }
 
-    function markdown_inline($input) {
+    static function markdown_inline($input) {
         $html = self::markdown_to_html($input);
         // omit p tags (note trailing linefeed)
         $result = substr($html, 3, -5);
         return $result;
     }
 
-    function typograph($input) {
+    static function typograph($input) {
         $output = SmartyPants::defaultTransform($input);
         return $output;
     }
 
-    function article_listing($url, $title, $date, $desc) {
+    static function article_listing($url, $title, $date, $desc) {
         ?>
             <div class=article-listing>
                 <h3><a href="<?= $url ?>"><?= self::markdown_inline($title) ?></a></h3>
@@ -43,7 +43,7 @@ class T {
         <?php
     }
 
-    function head($title = null) {
+    static function head($title = null) {
         ?>
 <!DOCTYPE html>
 <html>
@@ -86,7 +86,7 @@ class T {
                 <?php
     }
 
-    function foot() {
+    static function foot() {
         ?>
             </div>
         </main>
@@ -105,7 +105,7 @@ class T {
         <?php
     }
 
-    function article_head($title, $date, $subtitle = null) {
+    static function article_head($title, $date, $subtitle = null) {
         ?>
         <article>
 
@@ -121,7 +121,7 @@ class T {
         <?php
     }
 
-    function article_foot() {
+    static function article_foot() {
         ?>
             </div>
             <div class=article-foot>
